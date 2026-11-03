@@ -1,0 +1,110 @@
+{
+  "titulo": "Termita subterránea en Chile",
+  "intro": "La termita subterránea pertenece a la familia Rhinotermitidae, que se sumó a las dos familias de termitas que existían antes en el país. Un artículo de 2008 la registra en la Región Metropolitana y en la Quinta Región.",
+  "bloques": [
+    {
+      "tipo": "tarjetas",
+      "items": [
+        {
+          "titulo": "Señales de infestación",
+          "texto": "Según la oficina, los síntomas de infestación son evidentes cuando hay daños considerables en las estructuras de madera, castas voladoras y túneles de barro; en otros casos se requieren técnicos especializados para un diagnóstico correcto."
+        },
+        {
+          "titulo": "Dónde está en Chile",
+          "texto": "El artículo de Karsulovic y colaboradores (2008) indica que se ha detectado en la Región Metropolitana y en la Quinta Región, según los datos que cita para 1997-2004. Esa fuente señala que se trataría de Reticulitermes flavipes; los primeros reportes hablaban de Reticulitermes hesperus."
+        },
+        {
+          "titulo": "Qué riesgo implica",
+          "texto": "Según el mismo artículo, las termitas se alimentan principalmente de celulosa y constituyen un grave agente de deterioro de la madera en servicio."
+        },
+        {
+          "titulo": "Qué hacemos nosotros",
+          "texto": "En nuestro sitio distinguimos dos grupos de termitas, subterráneas y de madera seca, y señalamos que los tratamientos deben ser distintos para cada especie. Consulte sobre los planes preventivos y curativos de Truly Nolen en nuestra Casa Matriz, +56 22 784 4400."
+        }
+      ]
+    },
+    {
+      "tipo": "cifras",
+      "items": [
+        {
+          "dato": "80 focos de infestación en 29 comunas de Santiago",
+          "anio": "1997-1998",
+          "fuente": "Karsulovic et al., Maderas. Ciencia y Tecnología 10(2), 2008, que cita a INTEC-INFOR, 1997",
+          "texto": "Prospección realizada en Santiago."
+        },
+        {
+          "dato": "De 30 a 56 focos en la Quinta Región",
+          "anio": "2002-2004",
+          "fuente": "Karsulovic et al., Maderas. Ciencia y Tecnología 10(2), 2008, que cita a INIA, 2004",
+          "texto": "Aumento observado durante los tres años de estudio."
+        }
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Termitas según el artículo de 2008 y nuestro sitio",
+      "columnas": [
+        "Tipo",
+        "Qué se indica"
+      ],
+      "filas": [
+        [
+          "Familias presentes antes de la subterránea",
+          "Kalotermitidae y Termopsidae (Karsulovic et al., 2008)"
+        ],
+        [
+          "Termita subterránea",
+          "Familia Rhinotermitidae (Karsulovic et al., 2008)"
+        ],
+        [
+          "Grupos de termitas que distinguimos",
+          "Subterráneas y de madera seca; consulte sobre los planes preventivos y curativos"
+        ]
+      ]
+    },
+    {
+      "tipo": "relacionadas",
+      "items": [
+        "Ratón colilargo",
+        "Araña de rincón",
+        "Cucaracha alemana",
+        "Zancudo",
+        "Paloma"
+      ]
+    }
+  ],
+  "preguntas": [
+    [
+      "¿Dónde se han registrado termitas subterráneas en Chile?",
+      "El artículo de 2008 las ubica en la Región Metropolitana y en la Quinta Región, según los datos que cita para 1997-2004."
+    ],
+    [
+      "¿Cuántos focos se detectaron?",
+      "Se detectaron 80 focos en 29 comunas de Santiago entre 1997 y 1998, y entre 2002 y 2004 los focos de la Quinta Región subieron de 30 a 56, según el artículo, que cita a INTEC-INFOR e INIA."
+    ],
+    [
+      "¿Qué señales de infestación se indican?",
+      "Nuestro sitio menciona daños considerables en estructuras de madera, castas voladoras y túneles de barro. Añade que en otros casos se requieren técnicos especializados para un diagnóstico correcto."
+    ],
+    [
+      "¿Qué planes mencionamos para termitas?",
+      "Nuestro sitio habla de planes preventivos y curativos para termitas. Para conocerlos, consulte a nuestra Casa Matriz, +56 22 784 4400."
+    ]
+  ],
+  "fuentes": [
+    [
+      "Karsulovic, J. T. et al., Maderas. Ciencia y Tecnología 10(2), 99-111, 2008",
+      "https://www.redalyc.org/pdf/485/48510203.pdf"
+    ],
+    [
+      "Truly Nolen Chile, Servicios",
+      "https://trulynolen.cl/trulynolen-servicios/"
+    ],
+    [
+      "Truly Nolen Chile, Termitas subterráneas",
+      "https://trulynolen.cl/termitas-subterraneas/"
+    ]
+  ],
+  "imagen": "pendiente: foto real de Truly (Truly Nolen International o trulynolen.com)",
+  "imagenOrigen": "pendiente"
+}

@@ -1,0 +1,138 @@
+{
+  "titulo": "Cucaracha alemana (Blattella germanica) en Chile",
+  "intro": "La cucaracha alemana convive con las personas. Un estudio chileno de 2015 informó su primer registro formal en Coquimbo y La Serena y señaló que en el país se sabe poco de ella. Truly Nolen Chile atiende insectos rastreros.",
+  "bloques": [
+    {
+      "tipo": "tarjetas",
+      "items": [
+        {
+          "titulo": "Cómo reconocerla",
+          "texto": "El estudio de N. Pérez (2015) la identificó por dos bandas pardas en el tórax y por un tamaño menor al de otras cucarachas comunes, como las de los géneros Blatta y Periplaneta."
+        },
+        {
+          "titulo": "Dónde aparece en Chile",
+          "texto": "La literatura la cita para Santiago, Isla de Pascua y la Región de Magallanes. El estudio de 2015 entrega el primer registro formal en Coquimbo y La Serena: los ejemplares se recolectaron de noche en las afueras de restaurantes del centro de ambas ciudades, y la autora observó muchos moviéndose cerca de los contenedores de basura."
+        },
+        {
+          "titulo": "Qué riesgo tiene",
+          "texto": "La autora la describe como vector potencial de enfermedades y recuerda que, según Faúndez y Carvajal (2011), puede portar y transmitir 22 bacterias, 2 protistas, 20 helmintos y 3 virus. Plantea que es necesario un programa de vigilancia y control, y señala que la vio en el perímetro de locales de comida y, según comensales, en su interior."
+        },
+        {
+          "titulo": "Qué hacemos",
+          "texto": "En Truly Nolen Chile atendemos insectos rastreros. Consúltenos por su caso de cucaracha alemana."
+        }
+      ]
+    },
+    {
+      "tipo": "cifras",
+      "items": [
+        {
+          "dato": "30 ejemplares, adultos y juveniles, recolectados en La Serena y Coquimbo, entre octubre y diciembre de 2013",
+          "anio": "2013 (publicado en 2015)",
+          "fuente": "N. Pérez, Biodiversity and Natural History 1(2), 2015"
+        }
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Dónde se ha registrado la especie en Chile, según el estudio de 2015",
+      "columnas": [
+        "Zona",
+        "Qué dice la fuente"
+      ],
+      "filas": [
+        [
+          "Santiago e Isla de Pascua",
+          "Citada por Moroni y Camousseight en los años 70, según el estudio"
+        ],
+        [
+          "Región de Magallanes",
+          "Citada por Faúndez y Carvajal (2011), según el estudio"
+        ],
+        [
+          "La Serena y Coquimbo",
+          "Primer registro formal en el norte de Chile continental (muestras de 2013)"
+        ]
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Normas chilenas sobre control de plagas",
+      "columnas": [
+        "Norma",
+        "Qué establece"
+      ],
+      "filas": [
+        [
+          "DS 977/96 MINSAL, art. 47",
+          "Programa preventivo eficaz y continuo de lucha contra las plagas en establecimientos de alimentos"
+        ],
+        [
+          "DS 977/96 MINSAL, art. 48",
+          "El tratamiento con agentes químicos, físicos o biológicos solo se aplica por empresas autorizadas por la autoridad sanitaria"
+        ],
+        [
+          "DS 594 MINSAL, art. 11",
+          "Medidas efectivas para evitar la entrada o eliminar la presencia de insectos, roedores y otras plagas de interés sanitario en lugares de trabajo"
+        ],
+        [
+          "DS 157/2005 MINSAL, arts. 85 y 101",
+          "Diagnóstico previo a cada aplicación de plaguicidas de uso especializado y certificado al terminar los tratamientos"
+        ]
+      ]
+    },
+    {
+      "tipo": "relacionadas",
+      "titulo": "Otras plagas",
+      "items": [
+        "Zancudo",
+        "Paloma",
+        "Ratón colilargo",
+        "Araña de rincón",
+        "Termita subterránea"
+      ]
+    }
+  ],
+  "preguntas": [
+    {
+      "pregunta": "¿Hay cifras oficiales de cuántas casas tienen cucaracha alemana en Chile?",
+      "respuesta": "No las encontramos. El estudio de 2015 señala que en Chile se sabe poco de los hábitos, la distribución y el ciclo de vida de esta especie y no entrega prevalencia."
+    },
+    {
+      "pregunta": "¿Quién puede aplicar plaguicidas en su local?",
+      "respuesta": "El DS 157/2005 (art. 81) dispone que los de venta especializada los apliquen empresas autorizadas por la autoridad sanitaria, y el art. 101 exige entregar un certificado al cliente al terminar."
+    },
+    {
+      "pregunta": "¿Atienden insectos rastreros?",
+      "respuesta": "Sí, atendemos insectos rastreros. Consúltenos por su caso."
+    },
+    {
+      "pregunta": "¿Un local de comida debe tener control de plagas?",
+      "respuesta": "El DS 977/96, art. 47, exige un programa preventivo eficaz y continuo de lucha contra las plagas. Confirme el detalle con la autoridad sanitaria."
+    }
+  ],
+  "fuentes": [
+    [
+      "N. Pérez (2015), Primer registro de Blattella germanica en Coquimbo y La Serena, Biodiversity and Natural History 1(2)",
+      "http://www.biodiversnathist.com/index.php/bnh/article/download/14/19"
+    ],
+    [
+      "DS 977/96 MINSAL, Reglamento Sanitario de los Alimentos (BCN)",
+      "https://www.leychile.cl/navegar?idNorma=71271"
+    ],
+    [
+      "DS 594 MINSAL (BCN)",
+      "https://www.leychile.cl/navegar?idNorma=167766"
+    ],
+    [
+      "DS 157/2005 MINSAL (BCN)",
+      "https://www.leychile.cl/navegar?idNorma=262263"
+    ],
+    [
+      "Truly Nolen Chile, servicios",
+      "https://trulynolen.cl/trulynolen-servicios/"
+    ]
+  ],
+  "imagen": "pendiente: foto real de Truly (Truly Nolen International o trulynolen.com)",
+  "imagenOrigen": "pendiente"
+}

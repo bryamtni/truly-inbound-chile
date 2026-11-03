@@ -1,0 +1,158 @@
+{
+  "titulo": "Ratón colilargo: control de roedores en Chile",
+  "intro": "El MINSAL declaró alerta sanitaria por hantavirus desde Atacama hasta Magallanes, vigente hasta el 31 de julio de 2027. El virus lo transmite el ratón de cola larga, que vive en zonas rurales y semirurales de casi todo el país.",
+  "bloques": [
+    {
+      "tipo": "tarjetas",
+      "items": [
+        {
+          "titulo": "Nombre usado por el MINSAL",
+          "texto": "En su nota del 28 de julio de 2026, el MINSAL lo llama «ratón colilargo» y «ratón de cola larga»."
+        },
+        {
+          "titulo": "Dónde está en Chile",
+          "texto": "Según el MINSAL, vive en zonas rurales y semirurales de casi todo el país y está presente todo el año. En 2026, según la nota del 28 de julio, los casos ocurrieron en las regiones de Valparaíso, Metropolitana, O'Higgins, Maule, Ñuble, Biobío, La Araucanía, Los Ríos, Los Lagos y Aysén."
+        },
+        {
+          "titulo": "Qué riesgo implica",
+          "texto": "El MINSAL indica que el virus hanta produce una enfermedad endémica de Chile, transmitida por el ratón de cola larga. Los síntomas que señala son fiebre, dolor muscular intenso y dificultad respiratoria."
+        },
+        {
+          "titulo": "Qué hacemos nosotros",
+          "texto": "Controlamos roedores con cebos rodenticidas. Para consultar por su caso, contacte a nuestra Casa Matriz al +56 22 784 4400."
+        }
+      ]
+    },
+    {
+      "tipo": "cifras",
+      "items": [
+        {
+          "dato": "46 contagios y 18 fallecidos (letalidad 39 %)",
+          "anio": "2026, hasta la semana previa al 28 de julio",
+          "fuente": "MINSAL, nota del 28 de julio de 2026",
+          "texto": "Cifra de hantavirus que el MINSAL registraba a esa fecha."
+        },
+        {
+          "dato": "44 contagios y 8 fallecidos (letalidad 18 %)",
+          "anio": "2025",
+          "fuente": "MINSAL, nota del 28 de julio de 2026",
+          "texto": "Cifra de 2025, según la misma nota."
+        },
+        {
+          "dato": "Alerta sanitaria vigente hasta el 31 de julio de 2027",
+          "anio": "2026-2027",
+          "fuente": "MINSAL, nota del 28 de julio de 2026",
+          "texto": "El MINSAL declaró la alerta desde Atacama hasta Magallanes."
+        }
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Medidas de prevención que cita el MINSAL",
+      "columnas": [
+        "Medida",
+        "Fuente"
+      ],
+      "filas": [
+        [
+          "No tocar roedores",
+          "MINSAL, nota del 28 de julio de 2026"
+        ],
+        [
+          "Ventilar las casas antes de entrar si han estado cerradas",
+          "MINSAL, nota del 28 de julio de 2026"
+        ],
+        [
+          "Limpiar con agua y cloro los espacios sin uso",
+          "MINSAL, nota del 28 de julio de 2026"
+        ],
+        [
+          "Mantener la basura tapada y los alimentos resguardados",
+          "MINSAL, nota del 28 de julio de 2026"
+        ]
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Normas sanitarias relacionadas con las plagas",
+      "columnas": [
+        "Norma",
+        "Qué establece"
+      ],
+      "filas": [
+        [
+          "DS 594, art. 11",
+          "Los lugares de trabajo deben tomar «medidas efectivas para evitar la entrada o eliminar la presencia de insectos, roedores y otras plagas de interés sanitario»."
+        ],
+        [
+          "DS 977/96, art. 47",
+          "Los establecimientos de alimentos deben mantener un «programa preventivo eficaz y continuo de lucha contra las plagas»."
+        ],
+        [
+          "DS 977/96, art. 48",
+          "La erradicación con agentes químicos, físicos o biológicos la realizan «empresas autorizadas» por la autoridad sanitaria."
+        ],
+        [
+          "DS 157/2005, art. 85",
+          "Antes de cada aplicación de plaguicidas de uso especializado, la empresa debe hacer un diagnóstico (plaga, producto, plan de aplicación), que consta en un certificado entregado al usuario al finalizar la aplicación."
+        ],
+        [
+          "DS 157/2005, art. 101",
+          "Al terminar, la empresa entrega al cliente un certificado de los tratamientos realizados, emitido por el responsable técnico."
+        ]
+      ]
+    },
+    {
+      "tipo": "relacionadas",
+      "items": [
+        "Araña de rincón",
+        "Termita subterránea",
+        "Cucaracha alemana",
+        "Zancudo",
+        "Paloma"
+      ]
+    }
+  ],
+  "preguntas": [
+    [
+      "¿El ratón colilargo está solo en el campo?",
+      "El MINSAL señala que vive en zonas rurales y semirurales de casi todo el país. Si usted estuvo en una zona rural o semirural donde pudo haber ratones y presenta fiebre, dolor muscular intenso o dificultad respiratoria, el MINSAL indica acudir de inmediato a un centro de salud e informar al personal médico."
+    ],
+    [
+      "¿Solo hay riesgo en verano?",
+      "El MINSAL indica que el hanta no es un virus exclusivamente del verano, porque el ratón colilargo está presente todo el año."
+    ],
+    [
+      "¿Qué control de roedores ofrecemos?",
+      "Controlamos roedores con cebos rodenticidas. Para conocer el servicio en su recinto, llame a nuestra Casa Matriz al +56 22 784 4400."
+    ],
+    [
+      "¿Una empresa de plagas debe estar autorizada?",
+      "El DS 977/96, art. 48, dispone que la erradicación en establecimientos de alimentos se haga por empresas autorizadas por la autoridad sanitaria."
+    ]
+  ],
+  "fuentes": [
+    [
+      "MINSAL, nota del 28 de julio de 2026",
+      "https://www.minsal.cl/ministerio-de-salud-declara-alerta-sanitaria-por-hantavirus-desde-atacama-a-magallanes/"
+    ],
+    [
+      "Truly Nolen Chile, Servicios",
+      "https://trulynolen.cl/trulynolen-servicios/"
+    ],
+    [
+      "BCN, DS 594 MINSAL, condiciones sanitarias y ambientales en los lugares de trabajo",
+      "https://www.leychile.cl/navegar?idNorma=167766"
+    ],
+    [
+      "BCN, DS 977/96 MINSAL, Reglamento Sanitario de los Alimentos",
+      "https://www.leychile.cl/navegar?idNorma=71271"
+    ],
+    [
+      "BCN, DS 157/2005 MINSAL, Reglamento de pesticidas de uso sanitario y doméstico (texto consolidado BCN, versión 2007-06-30)",
+      "https://www.leychile.cl/navegar?idNorma=262263"
+    ]
+  ],
+  "imagen": "pendiente: foto real de Truly (Truly Nolen International o trulynolen.com)",
+  "imagenOrigen": "pendiente"
+}

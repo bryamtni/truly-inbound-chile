@@ -1,0 +1,138 @@
+{
+  "titulo": "Paloma (Columba livia) en zonas urbanas de Chile",
+  "intro": "En área urbana, la captura o caza de palomas no la decide una empresa: la Ley 19.473 (Caza) la prohíbe y solo el Servicio Agrícola y Ganadero (SAG), fuera de áreas protegidas, puede autorizarla. En Truly Nolen Chile ofrecemos TRULY PIGEONS AWAY.",
+  "bloques": [
+    {
+      "tipo": "tarjetas",
+      "items": [
+        {
+          "titulo": "Nombre",
+          "texto": "Paloma doméstica, Columba livia. El SAG la escribe «Columbia livia» en su resolución."
+        },
+        {
+          "titulo": "Ejemplo revisado",
+          "texto": "Revisamos la Resolución Exenta SAG 718/2016, de la Región de Tarapacá, que autoriza a una empresa a capturar y cazar palomas (Columba livia) con fines de control, dentro de inmuebles."
+        },
+        {
+          "titulo": "Qué pidió la empresa",
+          "texto": "En esa resolución, la empresa solicitante pidió autorización para controlar el «grave daño y deterioro» que las palomas ocasionan en los inmuebles y al ecosistema. No citamos cifras de riesgo sanitario de las palomas porque no hay una fuente chilena oficial que citar."
+        },
+        {
+          "titulo": "Qué hacemos",
+          "texto": "TRULY PIGEONS AWAY es, según la oficina, un sistema que repele las palomas sin químicos y sin comprometer el diseño de la infraestructura. En área urbana, la autorización de captura o caza corresponde al SAG."
+        }
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Qué dice la ley sobre la caza y captura en zonas urbanas",
+      "columnas": [
+        "Norma",
+        "Texto"
+      ],
+      "filas": [
+        [
+          "Ley 19.473, art. 7, inciso 1 (versión BCN 06-sep-2023)",
+          "«Se prohíbe la caza o la captura en [...] zonas urbanas [...]»"
+        ],
+        [
+          "Ley 19.473, art. 7, inciso 2",
+          "«[...] el Servicio Agrícola y Ganadero podrá autorizar la caza o la captura de determinados especímenes en los lugares señalados [...] que no sean áreas protegidas [...] para controlar la acción de animales que causen graves perjuicios al ecosistema [...]»"
+        ],
+        [
+          "Ley 19.473, art. 7, inciso 2 (áreas protegidas)",
+          "«En las áreas protegidas, dicha competencia será del Servicio de Biodiversidad y Áreas Protegidas.»"
+        ]
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Condiciones de la Resolución Exenta SAG 718/2016 (Iquique, 5 de julio de 2016)",
+      "columnas": [
+        "Condición",
+        "Qué dice"
+      ],
+      "filas": [
+        [
+          "A quién autoriza",
+          "A una sola empresa, GREEN PEST CONTROL SPA; no es una autorización general"
+        ],
+        [
+          "Qué autoriza",
+          "La captura y caza de palomas (Columba livia) con fines de control, dentro de inmuebles"
+        ],
+        [
+          "Vigencia y lugar",
+          "Dos años desde la fecha de la resolución, solo dentro de inmuebles de la Región de Tarapacá"
+        ],
+        [
+          "Aviso previo",
+          "Informe al SAG con cinco días hábiles de anticipación a las labores, con dirección del inmueble, método, personal y autorización del propietario"
+        ],
+        [
+          "Carné de caza",
+          "Exigido solo a quien use rifle de aire comprimido"
+        ],
+        [
+          "Tóxicos",
+          "Prohibido el uso de cualquier tipo de tóxicos y psicotrópicos como método de control"
+        ]
+      ]
+    },
+    {
+      "tipo": "cifras",
+      "items": [
+        {
+          "dato": "Vigencia de dos años y aviso previo de cinco días hábiles, en la autorización que el SAG Tarapacá dio a GREEN PEST CONTROL SPA en 2016",
+          "anio": "2016",
+          "fuente": "SAG, Resolución Exenta 718/2016"
+        }
+      ]
+    },
+    {
+      "tipo": "relacionadas",
+      "titulo": "Otras plagas",
+      "items": [
+        "Cucaracha alemana",
+        "Zancudo",
+        "Ratón colilargo",
+        "Araña de rincón",
+        "Termita subterránea"
+      ]
+    }
+  ],
+  "preguntas": [
+    {
+      "pregunta": "¿Puede una empresa de plagas capturar palomas en la ciudad por su cuenta?",
+      "respuesta": "No. La Ley 19.473, art. 7, prohíbe la caza o captura en zonas urbanas y solo el SAG puede autorizarla en los casos que señala."
+    },
+    {
+      "pregunta": "¿Qué ofrece Truly Nolen Chile para las palomas?",
+      "respuesta": "Ofrecemos TRULY PIGEONS AWAY, un sistema que repele las palomas. Consúltenos cómo se aplica a su caso."
+    },
+    {
+      "pregunta": "¿Qué exigió el SAG en 2016 a la empresa autorizada en Tarapacá?",
+      "respuesta": "Aviso previo de cinco días hábiles, vigencia de dos años, carné de caza para quien use rifle de aire comprimido y no usar tóxicos. Es un caso particular, no una regla general."
+    },
+    {
+      "pregunta": "¿Dónde consulto si necesito una autorización?",
+      "respuesta": "Corresponde al SAG, que es el organismo que autoriza; en áreas protegidas, al Servicio de Biodiversidad y Áreas Protegidas."
+    }
+  ],
+  "fuentes": [
+    [
+      "SAG, Resolución Exenta 718/2016 (Iquique, 05-07-2016)",
+      "https://www.sag.cl/sites/default/files/718_2016_t.pdf"
+    ],
+    [
+      "Ley 19.473 (Caza), art. 7, versión BCN 06-sep-2023 (XML de la BCN)",
+      "https://www.bcn.cl/leychile/consulta/obtxml?opt=7&idNorma=30840"
+    ],
+    [
+      "Truly Nolen Chile, servicios",
+      "https://trulynolen.cl/trulynolen-servicios/"
+    ]
+  ],
+  "imagen": "pendiente: foto real de Truly (Truly Nolen International o trulynolen.com)",
+  "imagenOrigen": "pendiente"
+}

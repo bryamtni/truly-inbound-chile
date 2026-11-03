@@ -1,0 +1,117 @@
+{
+  "titulo": "Zancudo (Aedes aegypti) en Chile",
+  "intro": "MINSAL llama «mosquito» al Aedes aegypti, que transmite el dengue. Lo ha informado en Arica (2016) y en el aeropuerto de Santiago (2026). Nuestro servicio de insectos voladores incluye zancudos.",
+  "bloques": [
+    {
+      "tipo": "tarjetas",
+      "items": [
+        {
+          "titulo": "Qué nombre usa cada fuente",
+          "texto": "MINSAL identifica al mosquito llamado Aedes aegypti, que transmite el dengue por picadura. En sus notas usa la palabra «mosquito»; «zancudo» es el término que usamos en la oficina."
+        },
+        {
+          "titulo": "Hallazgos en Chile",
+          "texto": "En Isla de Pascua, MINSAL informó el 20 de noviembre de 2019 un caso importado de dengue DEN-2 (contraído en Tahití), el primero de ese serotipo en la isla; en esa fecha ya se habían notificado 34 casos DEN-1 y regía una alerta sanitaria decretada en mayo. En el continente, MINSAL informó en abril de 2016 el hallazgo en Arica y, en enero de 2026, que el vector tiene presencia en Arica y Parinacota, Tarapacá y Valparaíso, y que se confirmó en la Región Metropolitana con un ejemplar hallado en las bodegas del aeropuerto de Santiago."
+        },
+        {
+          "titulo": "Qué informó MINSAL",
+          "texto": "MINSAL informó el 29 de enero de 2026 que hasta esa fecha no había casos autóctonos de arbovirosis en Chile continental. En 2016 recomendó a la población de Arica, entre otras medidas, tapar estanques y tambores con agua."
+        },
+        {
+          "titulo": "Qué hacemos",
+          "texto": "Nuestro servicio de insectos voladores incluye moscas, zancudos, polillas y avispas."
+        }
+      ]
+    },
+    {
+      "tipo": "cifras",
+      "items": [
+        {
+          "dato": "Primer caso importado de dengue DEN-2 en Isla de Pascua, confirmado por el ISP; en esa fecha, 34 casos DEN-1 en la isla y alerta sanitaria decretada en mayo; control del vector en todas las viviendas del área de riesgo",
+          "anio": "2019 (20 de noviembre)",
+          "fuente": "MINSAL, nota «ISP confirma caso de dengue en Isla de Pascua»"
+        },
+        {
+          "dato": "Sin casos autóctonos de arbovirosis en Chile continental hasta la fecha de la nota; en las tres primeras semanas de 2026, solo tres casos importados",
+          "anio": "2026 (29 de enero)",
+          "fuente": "MINSAL, nota sobre la detección en el aeropuerto de Santiago"
+        }
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Hallazgos comunicados por MINSAL",
+      "columnas": [
+        "Fecha",
+        "Lugar",
+        "Qué informó MINSAL"
+      ],
+      "filas": [
+        [
+          "18 abril 2016",
+          "Arica",
+          "Confirmó el hallazgo del mosquito Aedes aegypti; vigilancia con larvitrampas y ovitrampas"
+        ],
+        [
+          "20 noviembre 2019",
+          "Isla de Pascua",
+          "Caso importado de dengue DEN-2 (contraído en Tahití), el primero de ese serotipo en la isla; ya había 34 casos DEN-1 y alerta sanitaria desde mayo; control del vector"
+        ],
+        [
+          "29 enero 2026",
+          "Región Metropolitana",
+          "Ejemplar confirmado en bodegas del aeropuerto de Santiago; el vector tiene presencia en Arica y Parinacota, Tarapacá y Valparaíso"
+        ]
+      ]
+    },
+    {
+      "tipo": "relacionadas",
+      "titulo": "Otras plagas",
+      "items": [
+        "Cucaracha alemana",
+        "Paloma",
+        "Ratón colilargo",
+        "Araña de rincón",
+        "Termita subterránea"
+      ]
+    }
+  ],
+  "preguntas": [
+    {
+      "pregunta": "¿Hay casos de dengue u otras arbovirosis transmitidos dentro de Chile continental?",
+      "respuesta": "MINSAL informó el 29 de enero de 2026 que hasta esa fecha no existían casos autóctonos de arbovirosis en Chile continental y que en las tres primeras semanas del año solo se habían confirmado tres casos importados. Para la situación actual, consulte a MINSAL."
+    },
+    {
+      "pregunta": "¿Qué ocurrió en Isla de Pascua?",
+      "respuesta": "El 20 de noviembre de 2019, el ISP confirmó un caso importado de dengue DEN-2, contraído en Tahití, el primero de ese serotipo en la isla. MINSAL informó además que ya se habían notificado 34 casos DEN-1 y que regía una alerta sanitaria decretada en mayo, y control del vector en todas las viviendas del área de riesgo."
+    },
+    {
+      "pregunta": "¿Atienden zancudos?",
+      "respuesta": "Nuestro servicio de insectos voladores incluye zancudos. Consúltenos el alcance para su caso."
+    },
+    {
+      "pregunta": "¿Qué recomendó MINSAL a la población de Arica en 2016?",
+      "respuesta": "Entre otras medidas, tapar los estanques y tambores que contengan agua y reemplazar el agua de los floreros por arena húmeda. Para indicaciones actuales, consulte a MINSAL."
+    }
+  ],
+  "fuentes": [
+    [
+      "MINSAL, ISP confirma caso de dengue en Isla de Pascua (20-nov-2019)",
+      "https://www.minsal.cl/isp-confirma-caso-de-dengue-en-isla-de-pascua/"
+    ],
+    [
+      "MINSAL, ISP confirma detección de mosquito Aedes aegypti en aeropuerto de Santiago (29-ene-2026)",
+      "https://www.minsal.cl/isp-confirma-deteccion-de-mosquito-aedes-aegypti-en-aeropuerto-de-santiago-y-mantiene-medidas-de-vigilancia/"
+    ],
+    [
+      "MINSAL, hallazgo de Aedes aegypti en Arica (18-abr-2016)",
+      "https://www.minsal.cl/?p=7976"
+    ],
+    [
+      "Truly Nolen Chile, servicios",
+      "https://trulynolen.cl/trulynolen-servicios/"
+    ]
+  ],
+  "imagen": "pendiente: foto real de Truly (Truly Nolen International o trulynolen.com)",
+  "imagenOrigen": "pendiente"
+}

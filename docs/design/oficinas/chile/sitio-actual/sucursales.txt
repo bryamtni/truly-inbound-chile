@@ -1,0 +1,37 @@
+FUENTE: https://trulynolen.cl/sucursales-trulynolen-chile/  (leída el 2026-11-02)
+NOTA: tabla reordenada desde WebFetch; direcciones y resoluciones tal como las dio la página. Sin correos ni horarios en ninguna sucursal.
+
+CASA MATRIZ (Santiago): Av. Presidente Kennedy 8028, Vitacura · +56 22 784 4400 · Resolución sanitaria 0227, feb. 1999
+
+Región | Ciudad | Dirección | Teléfono | Resolución sanitaria
+XV | Arica | Magallanes 1410, sector Magisterio | +56 58 225 1490 | 0227, feb. 1999
+I | Iquique | Av. Salvador Allende 3138 | +56 228 637 234 | 0227, feb. 1999
+II | Antofagasta | Av. Argentina 1154 | +56 228 637 238 | 3391, ago. 2004
+II | Calama | Av. Granaderos 4297 | +56 228 637 238 | 971, abr. 2010
+III | Copiapó | O'Higgins 1268-A | +56 228 637 268 | 20, jun. 2008
+IV | La Serena | Amunátegui 431 | +56 228 637 274 | 1541, abr. 2016
+IV | Ovalle | Av. Laura Pizarro 1641, Villa San Esteban | +56 228 637 274 | 1541, abr. 2016
+V | San Felipe | Diego de Almagro 930 | +56 228 637 292 | 16666, nov. 2007
+V | Viña del Mar | Carlos Ibáñez del Campo 3340 | +56 228 637 292 | 2519, jul. 2011
+V | San Antonio | Av. Marina 1827 | +56 228 637 292 | 16666, nov. 2007
+VI | Rancagua | Longitudinal Sur Km 92, sector Gultro s/n (ex Ruta 5), Olivar | +56 227 844 400 | 3692, ago. 2012
+VI | San Fernando | Gladys Theim 971, Jardines del Sur | +56 227 844 400 | 3692, ago. 2012
+VII | Curicó | Av. Lircay 2532, Villa Mario Montucci | +56 228 637 320 | 8518, oct. 2011
+VII | Talca | Av. Lircay 2532, Villa Mario Montuca | +56 228 637 320 | 8518, oct. 2011
+VIII | Chillán | Isabel Riquelme 478 | +56 228 637 329 | 1760, abr. 2010
+VIII | Concepción | Cristóbal Colón 3990, sector Las Salinas, Talcahuano | +56 228 637 329 | 1760, abr. 2010
+VIII | Los Ángeles | Cristóbal Colón 3990, sector Las Salinas, Talcahuano | +56 228 637 329 | 1760, abr. 2010
+IX | Villarrica | Saturnino Epulef 1429/B | +56 228 637 360 | A20/406, 10 ene. 2017
+IX | Temuco | Rudecindo Ortega 01075 | +56 452 225 447 | A20/406, 10 ene. 2017
+XIV (la página dice XVI) | Valdivia | Las Horquetas 011 | +56 228 637 360 | 1979, ago. 2011
+X | Osorno | Av. Zenteno 1431 | +56 228 637 372 | 2464, feb. 2012
+X | Puerto Montt | Vía Romana 1801, Cardonal | +56 228 637 372 | 1546, dic. 2008
+X | Castro (Chiloé) | Panamericana Norte Km 3,5 N.º 3464 | +56 228 637 372 | 45, oct. 2009
+
+INCONSISTENCIAS DEL SITIO ACTUAL (a corregir en el nuevo; no se copian a ciegas):
+- Los Ángeles repite la dirección de Concepción (Talcahuano).
+- Curicó y Talca: misma dirección, con «Montucci» / «Montuca».
+- Ovalle comparte teléfono y resolución con La Serena.
+- Casa Matriz aparece con +56 22 784 4400 y, en un enlace, +56 58 225 1490 (que es de Arica).
+- Valdivia rotulada «XVI Región» (hoy es XIV, Los Ríos).
+- El menú de teléfonos del sitio agrupa Santiago, Rancagua y San Fernando en +56 22 784 4400.

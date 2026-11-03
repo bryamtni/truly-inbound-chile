@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Configuración local de Claude Code (permisos personales)
+.claude/
+
+# Secretos y archivos pesados: nunca al repo
+.env
+.env.*
+*.pem
+*.key
+*.mp4
+*.mov
+*.zip
+*.bundle

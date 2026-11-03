@@ -1,0 +1,134 @@
+{
+  "titulo": "Araña de rincón en Chile (género Loxosceles)",
+  "intro": "La guía del MINSAL de 2016 describe la araña de rincón, o araña de los rincones, como Loxosceles laeta, de color café parduzco y cerca de 1 centímetro de largo. La propia guía advierte que desde 2004 hay dudas sobre si L. laeta es la única causante de los cuadros clínicos en Chile y recomienda atribuirlos al género Loxosceles mientras no se determinen las especies.",
+  "bloques": [
+    {
+      "tipo": "tarjetas",
+      "items": [
+        {
+          "titulo": "Cómo reconocerla",
+          "texto": "La guía del MINSAL la describe de color café parduzco, con abundante pilosidad, de cerca de 1 centímetro de largo y patas de 8 a 45 mm. El cefalotórax tiene forma de violín y presenta 3 pares de ojos dispuestos en triángulo. Es un arácnido, no un insecto."
+        },
+        {
+          "titulo": "Dónde está en Chile",
+          "texto": "Según la guía, habita en el interior de las casas, urbanas y rurales, en lugares secos y oscuros. L. laeta se ubica principalmente desde la primera a la octava región, y se han comunicado casos de loxoscelismo en todo el país."
+        },
+        {
+          "titulo": "Qué riesgo implica",
+          "texto": "La guía indica que no es agresiva y muerde en defensa propia. El loxoscelismo, cuadro que la guía recomienda atribuir al género Loxosceles, cursa con necrosis cutánea y, en un bajo porcentaje de los casos, con manifestaciones sistémicas graves que pueden llevar a la muerte."
+        },
+        {
+          "titulo": "Si la encuentra",
+          "texto": "Para consultar por su caso, contacte a nuestra Casa Matriz al +56 22 784 4400."
+        }
+      ]
+    },
+    {
+      "tipo": "cifras",
+      "items": [
+        {
+          "dato": "Letalidad de 1 a 3 % del total de loxoscelismo",
+          "anio": "Año de los datos no indicado en la guía (publicada en 2016)",
+          "fuente": "MINSAL, Guía para el Manejo de Mordedura de Araña de los Rincones, 2016",
+          "texto": "Cifra que entrega la guía."
+        },
+        {
+          "dato": "Letalidad de 20 a 25 % entre los cuadros cutáneo-viscerales",
+          "anio": "Año de los datos no indicado en la guía (publicada en 2016)",
+          "fuente": "MINSAL, Guía para el Manejo de Mordedura de Araña de los Rincones, 2016",
+          "texto": "Estos cuadros representan entre 10 y 15 % de los casos, según la guía."
+        },
+        {
+          "dato": "L. laeta, principalmente de la primera a la octava región; casos de loxoscelismo en todo el país",
+          "anio": "Año de los datos no indicado en la guía (publicada en 2016)",
+          "fuente": "MINSAL, Guía para el Manejo de Mordedura de Araña de los Rincones, 2016",
+          "texto": "Distribución que indica la guía."
+        }
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Algunas medidas preventivas que cita la guía del MINSAL (2016)",
+      "columnas": [
+        "Medida"
+      ],
+      "filas": [
+        [
+          "Separar las camas 10 cm de los muros"
+        ],
+        [
+          "No colgar ropa ni toallas en los muros"
+        ],
+        [
+          "Aspirar prolijamente y en forma periódica"
+        ],
+        [
+          "Revisar y sacudir la ropa y los zapatos antes de ponérselos"
+        ],
+        [
+          "Revisar la cama y los rincones antes de acostarse"
+        ],
+        [
+          "Impedir el ingreso desde el exterior obturando conductos eléctricos y de cañerías"
+        ],
+        [
+          "Usar guantes y calzado adecuado para mover objetos apilados por mucho tiempo"
+        ]
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Si hay una mordedura, según la guía del MINSAL",
+      "columnas": [
+        "Indicación"
+      ],
+      "filas": [
+        [
+          "Lavar la herida con agua y jabón y dejar en reposo el miembro afectado"
+        ],
+        [
+          "Conservar la araña, viva en un recipiente con tapa o muerta en un recipiente seco, y no aplastarla"
+        ],
+        [
+          "Permanecer tranquilo e ir al Servicio de Urgencia más cercano"
+        ]
+      ]
+    },
+    {
+      "tipo": "relacionadas",
+      "items": [
+        "Ratón colilargo",
+        "Termita subterránea",
+        "Cucaracha alemana",
+        "Zancudo",
+        "Paloma"
+      ]
+    }
+  ],
+  "preguntas": [
+    [
+      "¿Qué dice la guía sobre la especie que causa los cuadros?",
+      "Describe la araña de rincón como Loxosceles laeta, pero advierte que desde 2004 hay dudas sobre si es la única causante en Chile. Por eso recomienda atribuir los cuadros al género Loxosceles mientras no se determinen las especies."
+    ],
+    [
+      "¿Qué corresponde hacer si una araña muerde a una persona?",
+      "La guía del MINSAL indica lavar con agua y jabón y dejar en reposo el miembro afectado, conservar la araña (viva en un recipiente con tapa o muerta en uno seco, sin aplastarla) y permanecer tranquilo e ir al Servicio de Urgencia más cercano."
+    ],
+    [
+      "¿Dónde se esconde dentro de la casa?",
+      "La guía menciona closets, detrás de la ropa colgada en la pared, zapatos, rincones, y detrás de muebles y cuadros."
+    ],
+    [
+      "¿Qué dice la guía sobre los productos químicos?",
+      "Que su uso debe ser cauteloso, porque los arácnidos son resistentes a las sustancias que se usan habitualmente contra artrópodos intradomiciliarios. Sugiere considerar formulaciones con efecto aracnicida."
+    ]
+  ],
+  "fuentes": [
+    [
+      "MINSAL, Departamento de Enfermedades Transmisibles, Guía para el Manejo de Mordedura de Araña de los Rincones, Loxosceles laeta, 2016 (copia alojada en la Universidad Mayor)",
+      "https://postgrados.umayor.cl/wp-content/uploads/2020/02/Gu%C3%ADa-para-el-Manejo-de-Mordedura-de-Ara%C3%B1a-de-los-Rincones-Loxosceles-laeta.pdf"
+    ]
+  ],
+  "imagen": "pendiente: foto real de Truly (Truly Nolen International o trulynolen.com)",
+  "imagenOrigen": "pendiente"
+}

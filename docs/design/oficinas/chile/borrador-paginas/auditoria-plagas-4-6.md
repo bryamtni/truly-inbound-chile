@@ -1,0 +1,112 @@
+# Auditoría independiente · plagas 4-6 (cucaracha alemana, zancudo, paloma) · paso 10
+
+Fecha: 2026-11-02. Auditor: agente independiente. Solo lectura sobre los borradores.
+Fuentes descargadas y leídas hoy (copias en /tmp/aud): Pérez 2015 (PDF), Res. Ex. SAG 718/2016 (PDF), Ley 19.473 (XML BCN, abrió con curl + User-Agent), DS 977/96, DS 594 y DS 157/2005 (XML BCN), tres notas MINSAL, trulynolen.cl/trulynolen-servicios/.
+
+## 0. Validación de JSON
+| Archivo | Resultado |
+|---|---|
+| plaga-cucaracha-alemana.json | OK, abre con `python3 -I json.load` |
+| plaga-zancudo.json | OK |
+| plaga-paloma.json | OK |
+
+## Veredicto global
+Ningún JSON roto. Cero «tú», cero voseo. Las fuentes principales dicen lo que el texto les atribuye, con tres problemas reales: (a) la Pascua 2019 se presenta sin decir que el caso fue IMPORTADO y que la isla ya tenía 34 casos DEN-1 y alerta sanitaria; (b) dos afirmaciones sobre la oficina que la oficina no publica («no realiza captura ni caza», «el servicio es presencial»); (c) «repelente» y la cifra/ejemplo del SAG en el bloque «cifras» sin su contexto de caso particular. Sin «hasta 100 %», sin 21/22/23 sucursales, sin «35 años»: bien.
+
+## 1. Tabla de hallazgos
+
+### plaga-cucaracha-alemana.json
+| Pasaje | Veredicto | Qué dice la fuente | Corrección propuesta |
+|---|---|---|---|
+| «30 ejemplares recolectados en La Serena y Coquimbo, entre octubre y diciembre de 2013» | OK | Pérez: «entre los meses de octubre y diciembre se colectaron 30 ejemplares»; La Serena oct-nov (3, 5, 5 juveniles), Coquimbo oct-dic (4, 7, 6 juveniles); recibido feb-2014, publicado 19-ago-2015. Incluye juveniles. | Opcional: «30 ejemplares, adultos y juveniles, ...». |
+| Intro «según un estudio chileno de 2015, se conocía poco en el país» | OK | «la distribución de esta especie es poco conocida»; «se conoce poco sobre los hábitos, distribución y ciclo de vida». | Sin cambio. |
+| Cómo reconocerla: dos bandas pardas, tamaño menor que Blatta y Periplaneta | OK | Literal en «Identificación». | Sin cambio. |
+| Dónde aparece: «los ejemplares se recolectaron de noche, en las afueras de restaurantes del centro, cerca de contenedores de basura» | CORREGIR | «colectados en la noche en las afueras de restaurantes del centro»; «se observaron muchos ejemplares moviéndose rápidamente cerca de los contenedores de basura». Los contenedores son donde se observaron, no necesariamente donde se colectó cada uno. | «los ejemplares se recolectaron de noche en las afueras de restaurantes del centro de ambas ciudades, y la autora observó muchos moviéndose cerca de los contenedores de basura.» |
+| «La literatura la cita para Santiago, Isla de Pascua y Magallanes» / tabla «años 70» | OK | Moroni y Camousseight (texto 1975, bibliografía 1976): Santiago e Isla de Pascua; Faúndez y Carvajal 2011: Magallanes. (La fuente escribe «Cammouseigh» en el texto.) | Sin cambio. |
+| «primer registro formal en Coquimbo y La Serena» / «primer registro en el norte de Chile continental» | OK | Literal. La autora añade que la especie «probablemente se ha encontrado desde hace largo tiempo»; el texto no dice «llegó», bien. | Sin cambio. Opcional agregar esa salvedad. |
+| Qué riesgo: «vector potencial... se ha indicado que puede portar 22 bacterias, 2 protistas, 20 helmintos y 3 virus» | CORREGIR (menor) | «puede llegar a portar y transmitir 22 bacterias, 2 protistas, 20 helmintos y 3 virus (Faúndez & Carvajal, 2011)». El texto omite «y transmitir» y no nombra al autor original de la cifra (la nota interna sí lo sabe). | «...recuerda que, según Faúndez y Carvajal (2011), puede portar y transmitir 22 bacterias, 2 protistas, 20 helmintos y 3 virus.» |
+| «Plantea que, en esos locales, conviene un programa de vigilancia y control» | CORREGIR (menor) | «es necesario establecer un programa de vigilancia y control». La presencia en locales viene de observación personal y de comensales (comunicación personal), no de muestreo. | «Plantea que es necesario un programa de vigilancia y control, y señala que la vio en el perímetro de locales de comida y, según comensales, en su interior.» |
+| Qué hace la oficina: «Truly Nolen Chile atiende insectos rastreros» | OK | trulynolen.cl: «INSECTOS RASTREROS» listado como servicio principal; el texto no menciona cucarachas. | Sin cambio. |
+| «El servicio es presencial.» (sin «según la oficina») | CORREGIR | La página de servicios no dice «presencial». sitio-actual/empresa-servicios-legales.txt solo habla de «Visitas regulares de día o de noche» (contrato). La nota admite que viene de la receta. | Borrar la frase, o: «Según la oficina, sus técnicos hacen visitas regulares.» |
+| «...para la cucaracha alemana: Consulte directamente por su caso.» | CORREGIR | Forma: mayúscula tras dos puntos. «Consulte» es usted, correcto (la oficina usa «Consulte sobre los planes...»). | «...para la cucaracha alemana. Consulte directamente por su caso.» |
+| Tabla DS 977/96 art. 47 | OK | «Deberá aplicarse un programa preventivo eficaz y continuo de lucha contra las plagas.» (BCN, versión 2026-06-19). | Sin cambio. |
+| Tabla DS 977/96 art. 48: «La erradicación solo la hacen empresas autorizadas por la autoridad sanitaria» | CORREGIR | Art. 48: las medidas de erradicación se adoptan «en caso que alguna plaga invada»; «el tratamiento con agentes químicos, físicos o biológicos sólo deberá aplicarse ... por empresas autorizadas». La restricción es del tratamiento, no de toda erradicación. | «El tratamiento con agentes químicos, físicos o biológicos solo se aplica por empresas autorizadas por la autoridad sanitaria» |
+| Tabla DS 594 art. 11 | OK | «medidas efectivas para evitar la entrada o eliminar la presencia de insectos, roedores y otras plagas de interés sanitario» en lugares de trabajo. | Sin cambio. |
+| Tabla DS 157/2005 arts. 85 y 101 | OK | Art. 85: diagnóstico antes de cada aplicación de plaguicidas de uso especializado, consta en certificado al finalizar; art. 101: certificado de los tratamientos al terminar. | Agregar «de uso especializado» a «cada aplicación». |
+| FAQ DS 157 art. 81 | OK | «plaguicidas de venta especializada sólo podrá ser realizada por empresas autorizadas por la autoridad sanitaria». | Sin cambio. |
+| Voz: intro «Esta página reúne lo que publica esa fuente...»; título de tabla «que puede revisar» | CORREGIR | Meta-texto de página («esta página reúne») y relleno de plantilla; no es voz de la oficina. | Intro: «La cucaracha alemana convive con las personas. Un estudio chileno de 2015 informó su primer registro formal en Coquimbo y La Serena y señaló que en el país se sabe poco de ella. Truly Nolen Chile atiende insectos rastreros.» |
+
+### plaga-zancudo.json
+| Pasaje | Veredicto | Qué dice la fuente | Corrección propuesta |
+|---|---|---|---|
+| Dónde aparece / tabla / FAQ: «En Isla de Pascua hubo en 2019 un caso de dengue DEN-2» (sin más) | CORREGIR (importante) | Nota 20-nov-2019: el caso es «importado», hombre de 55 años que «adquirió el virus ... de viaje en Tahití»; además «En mayo de este año se decretó Alerta Sanitaria en Isla de Pascua... se han notificado 34 casos de dengue DEN 1 en la isla.» El texto, tal como está, sugiere un caso aislado y omite que la isla ya tenía casos. | Tarjeta: «En Isla de Pascua, MINSAL informó el 20 de noviembre de 2019 un caso importado de dengue DEN-2 (contraído en Tahití), el primero de ese serotipo en la isla; en esa fecha ya sumaban 34 casos DEN-1 y regía una alerta sanitaria decretada en mayo.» Igual en la tabla y en la FAQ «¿Qué ocurrió en Isla de Pascua?». |
+| Cifras: «Primer caso de dengue DEN-2 confirmado en Isla de Pascua; control del vector en todas las viviendas del área de riesgo» | CORREGIR | Fuente: «el primero de este tipo en el territorio insular»; control «en todas las viviendas ubicadas en el área de riesgo». Quien confirma es el ISP, comunicado por MINSAL (el texto lo dice bien en la FAQ, no aquí). Falta «importado». | «Primer caso importado de dengue DEN-2 en Isla de Pascua, confirmado por el ISP; control del vector en todas las viviendas del área de riesgo». |
+| «MINSAL informó el 29 de enero de 2026 que hasta esa fecha no había casos autóctonos de arbovirosis en Chile continental» | OK | Literal: «hasta la fecha no existen casos de arbovirosis autóctonos en Chile continental». También: «solo se han confirmado tres casos importados» en las tres primeras semanas de 2026 y alerta sanitaria vigente desde 2023 «desde la región de Arica hasta Los Ríos». | Sin cambio en la frase. Sugerencia: agregar «en las tres primeras semanas de 2026 solo se habían confirmado tres casos importados». |
+| FAQ «¿Hay dengue transmitido dentro de Chile continental?» → respuesta sobre «arbovirosis» | CORREGIR (menor) | La nota habla de «arbovirosis autóctonos» (dengue, zika, chikungunya), no solo dengue; pregunta y respuesta no coinciden. | Pregunta: «¿Hay casos de dengue u otras arbovirosis transmitidos dentro de Chile continental?» |
+| Abril 2016: hallazgo en Arica; larvitrampas y ovitrampas; tapar estanques y tambores; arena húmeda en floreros | OK | Nota 18-abr-2016: ISP confirmó hallazgo en Arica; «vigilancia entomológica con larvitrampas y ovitrampas»; «Tapar los estanques y tambores que contengan agua»; «Reemplazar el agua por arena húmeda en floreros de casas y del cementerio». Añade: «en Chile Continental no tenemos casos asociados». | Sin cambio. Aclarar que la recomendación fue para Arica: «MINSAL recomendó a la población de Arica...». |
+| Enero 2026: presencia en Arica y Parinacota, Tarapacá y Valparaíso; confirmado en RM con ejemplar en bodegas del aeropuerto | OK | Literal; el ejemplar es del Aeropuerto Arturo Merino Benítez. No dice «establecido»; el borrador tampoco. | Sin cambio. |
+| Zancudo vs mosquito: intro y «Cómo reconocerla» | OK con reparo | La nota dice «mosquito Aedes aegypti»; el borrador lo declara y aclara que «zancudo» es término de la oficina. Reparo 1: la oficina solo lista «zancudos» entre insectos voladores; no dice que trate Aedes ni que controle el vector del dengue. Reparo 2: «Cómo reconocerla» no explica cómo reconocerlo (MINSAL no lo describe) y usa «la» para un zancudo («lo identifica»). | Renombrar la tarjeta «Qué nombre usa cada fuente». Agregar en «Qué hace la oficina»: «La oficina no indica que trate específicamente Aedes aegypti.» |
+| Qué hace la oficina: «servicio de insectos voladores incluye moscas, zancudos, polillas y avispas» | OK | Literal: «Los insectos voladores como las moscas, zancudos, polillas, avispas, etc.». Nota: dice «etc.» y «tratamientos especiales... diseñado para usted». | Sin cambio. |
+| «La atención es presencial» | CORREGIR | No está en la página de servicios. | Borrar. |
+| Tarjeta «Qué riesgo tiene» | CORREGIR (voz) | No da un riesgo, solo «no hay casos autóctonos» y una recomendación de 2016; título que promete algo que el contenido no entrega. | Renombrar: «Qué informó MINSAL». |
+| Intro «Esta página resume los hallazgos...» | CORREGIR (voz) | Meta-texto. | «MINSAL llama «mosquito» al Aedes aegypti, que transmite el dengue. Lo ha informado en Arica (2016) y en el aeropuerto de Santiago (2026). Según la oficina, su servicio de insectos voladores incluye zancudos.» |
+
+### plaga-paloma.json
+| Pasaje | Veredicto | Qué dice la fuente | Corrección propuesta |
+|---|---|---|---|
+| Intro/tabla Ley 19.473 art. 7 incisos 1 y 2 | OK | XML BCN (idNorma 30840, fechaVersion 2023-09-06) abrió sin problema. Inciso 1: «Se prohíbe la caza o la captura en [...] zonas urbanas [...]». Inciso 2: el SAG «podrá autorizar la caza o la captura de determinados especímenes en los lugares señalados ... que no sean áreas protegidas, pero sólo para fines científicos, para controlar la acción de animales que causen graves perjuicios al ecosistema, para establecer centros de reproducción o criaderos, o para permitir una utilización sustentable del recurso. En las áreas protegidas, dicha competencia será del Servicio de Biodiversidad y Áreas Protegidas.» Las elipsis del borrador son fieles. | Sin cambio en las citas. Precisión en la intro: «solo el SAG puede autorizarla fuera de áreas protegidas». |
+| Fuente «Ley 19.473... versión BCN 06-sep-2023 (copia ... uach.cl)» | CORREGIR | El PDF de la UACh es copia BCN («Última Versión De: 06-SEP-2023», generado 11-jul-2025), coincide, pero el archivo se llama «27-SEP-1996» y es copia de terceros; hoy existe la fuente primaria en XML BCN. | Reemplazar por `https://www.bcn.cl/leychile/consulta/obtxml?opt=7&idNorma=30840` o dejar solo el enlace de leychile. |
+| «Resolución Exenta SAG 718/2016, Iquique, 5 de julio de 2016» | OK | Iquique, 05/07/2016, firma el Director Regional de Tarapacá, César Cardozo. Título: «Autoriza a GREEN PEST CONTROL SPA la captura y caza de palomas (Columbia livia) con fines de control, dentro de inmuebles». | Sin cambio. |
+| «A una empresa determinada, GREEN PEST CONTROL SPA; no es una autorización general» | OK | Resuelvo 1: autoriza a esa empresa. «No es general» es inferencia correcta del texto. El borrador evita generalizar. | Sin cambio. Opcional: evaluar si conviene nombrar a otra empresa en una página de Truly. |
+| «Dos años... solo dentro de inmuebles de la Región de Tarapacá» | OK | Resuelvo 2: dos años desde la fecha, «válida exclusivamente dentro de los inmuebles ubicados en la Región Tarapacá». | Sin cambio. |
+| «Informe al SAG con cinco días hábiles de anticipación a las labores» | OK (completar) | Resuelvo 3: email previo a dos encargados regionales del SAG, con cinco días hábiles, con dirección, propietario, días, personal, método y copia de la autorización del propietario; además informe final (resuelvo 4). | Agregar: «con dirección del inmueble, método, personal y autorización del propietario». |
+| «Carné de caza: Exigido al personal que cace con rifle de aire comprimido» | OK | Resuelvo 5: carné de caza vigente del SAG a quien realice control «mediante caza con rifle de aire comprimido». | Sin cambio. |
+| «Tóxicos: Prohibido el uso de cualquier tipo de tóxicos y psicotrópicos como método de control» | OK | Resuelvo 7, literal. Resuelvo 8 (no mencionado) prohíbe controlar a la vez termitas, roedores y otras plagas en el inmueble. | Opcional agregar resuelvo 8. |
+| Qué autoriza la resolución (no está dicho) | CORREGIR | La resolución autoriza «capturar y sacrificar palomas y gorriones» (dislocación cervical, rifles a postones, redes y trampas). El borrador nunca dice que es captura y sacrificio, ni que incluye gorriones; una persona lectora puede creer que es un permiso de repelencia. | Añadir fila: «Qué autoriza: Capturar y sacrificar palomas y gorriones, con rifle de postones, redes y trampas». |
+| Cifras: «Vigencia de la autorización de 2016 del SAG: dos años; aviso previo de cinco días hábiles» | CORREGIR | Son condiciones de UNA resolución para UNA empresa en UNA región. En el bloque «cifras» el rótulo «del SAG» se lee como regla general. | Dato: «Vigencia de dos años y aviso previo de cinco días hábiles, en la autorización que el SAG Tarapacá dio a GREEN PEST CONTROL SPA en 2016». |
+| «En esa resolución, la empresa solicitante pidió autorización para controlar el «grave daño y deterioro»...» | OK | Considerando 3: «controlar el grave daño y deterioro que éstas ocasionan en los inmuebles y al ecosistema». Es lo que la empresa pidió, no una constatación del SAG; el borrador lo dice bien. | Sin cambio. |
+| «No encontramos una fuente chilena oficial con cifras sobre ellas, y no las damos» | OK en fondo | No se afirma riesgo sanitario de palomas. Bien. Forma: la afirmación es del equipo, no de la oficina; la oficina SÍ dice «enfermedades, alergias» de las palomas. | Reformular: «Este sitio no da cifras de riesgo sanitario de las palomas porque no hay una fuente chilena oficial citada.» (la oficina afirma «enfermedades»; no se replica). |
+| «Según la oficina, ofrece «TRULY PIGEONS AWAY», un repelente sin químicos, sin alterar el diseño del edificio» | CORREGIR | Oficina: «sistema único y exclusivo ... innovador, sustentable e inofensivo»; «No utilizamos químicos, aplicamos Tecnología»; «Repele las palomas sin comprometer el diseño de la infraestructura ni su imagen corporativa». No usa «repelente» (suena a producto químico) ni «edificio». | «Según la oficina, TRULY PIGEONS AWAY es un sistema que repele las palomas sin químicos y sin comprometer el diseño de la infraestructura.» |
+| «La oficina no realiza captura ni caza: en área urbana esa autorización corresponde al SAG.» y FAQ «La oficina no ofrece captura ni caza» | FALLA | La página de servicios no dice eso; solo no la lista. Las notas internas reconocen que está «pendiente de la oficina» y aun así el texto lo afirma como hecho. Es una declaración sobre la oficina que la oficina no publica. | «La oficina no publica un servicio de captura ni caza de palomas. En área urbana esa autorización corresponde al SAG.» (idéntico en la FAQ) |
+| Intro «la Ley 19.473 (Caza) la prohíbe y solo el SAG puede autorizarla» | OK con matiz | Art. 7: en áreas protegidas la competencia es del SBAP. | «solo el SAG (fuera de áreas protegidas) puede autorizarla». |
+| Tarjetas «Cómo reconocerla» y «Dónde aparece en Chile» | CORREGIR (voz) | «Cómo reconocerla»: dice solo el nombre científico y cómo escribe el SAG; «Dónde aparece»: no dice dónde aparece, solo qué resolución se revisó. Titulares vacíos de plantilla. | «Cómo reconocerla» → «Nombre»: «Paloma doméstica, Columba livia (el SAG la escribe «Columbia livia» en su resolución).» «Dónde aparece» → «Ejemplo revisado». |
+| FAQ «¿Dónde consulto si necesito una autorización?» | OK | Sin «tú»; pregunta en primera persona; «Consulte» es usted. Pero «en su oficina regional» no está en la fuente (la resolución es de la Dirección Regional de Tarapacá; el SAG tiene oficinas regionales, hecho conocido, sin verificar aquí). | «Corresponde al SAG, que es el organismo que autoriza.» (sin «Consulte en su oficina regional» hasta citar la web del SAG). |
+| Atribuciones al SAG | OK | La resolución habla solo de palomas/gorriones y su control en inmuebles; el borrador no atribuye al SAG nada sobre plaguicidas, roedores ni riesgos sanitarios. | Sin cambio. |
+
+## 2. Atribuciones «según la oficina» (trulynolen.cl/trulynolen-servicios/, curl 2026-11-02)
+| Atribución | Veredicto | Texto literal |
+|---|---|---|
+| Insectos rastreros | OK | «INSECTOS RASTREROS» (sin mención de cucaracha). |
+| Insectos voladores incluyen moscas, zancudos, polillas, avispas | OK | «Los insectos voladores como las moscas, zancudos, polillas, avispas, etc.» |
+| TRULY PIGEONS AWAY | OK (ver CORREGIR de «repelente») | «Creamos TRULY PIGEONS AWAY es un sistema único y exclusivo ... capaz de reducir hasta un 100% su presencia. “No utilizamos químicos, aplicamos Tecnología” Repele las palomas sin comprometer el diseño de la infraestructura ni su imagen corporativa.» |
+| «atención presencial» | FALLA/CORREGIR | No está en la página de servicios. |
+| Cifras prohibidas | OK | En los tres JSON no aparece «hasta 100 %», 21/22/23 sucursales, «35 años», garantías, plazos ni certificaciones propias. Las únicas cifras son de Pérez, MINSAL y SAG. |
+| Certificado / diagnóstico previo (DS 157) | OK | Se atribuye a la norma, no a la oficina. |
+
+## 3. Trato
+Regex sobre los tres JSON y las notas: sin tú, tu, tus, te, puedes, necesitas, quieres, voseo ni vosotros. Imperativos presentes: «Consulte», «Confirme» (usted, correcto). OK. Notas: mezcla «revisamos/encontramos/damos» (primera persona plural del sitio) con «la oficina» en tercera; decidir quién habla (la voz-card dice que emisor es la oficina). CORREGIR de forma: unificar a «Esta página no da...» o a la voz de la oficina.
+
+## 4. Voz
+- Meta-texto de plantilla en las tres intros («Esta página reúne...», «Esta página resume...», «Esta página explica ese marco...»).
+- Rótulos de tarjeta vacíos o que no corresponden al contenido: «Cómo reconocerla» (zancudo, paloma), «Dónde aparece en Chile» (paloma), «Qué riesgo tiene» (zancudo, paloma).
+- Frases «Consulte con la oficina el alcance/cómo se aplica a su caso» repetidas 3 veces con la misma construcción.
+- No hay triadas de adjetivos ni eslóganes; la enumeración «22 bacterias, 2 protistas...» es de la fuente.
+
+## 5. Atribuciones cruzadas
+- Cifra de patógenos: Faúndez y Carvajal vía Pérez; el texto lo dice con «se ha indicado» sin nombrar a Faúndez y Carvajal (corregir arriba).
+- Ningún dato del SAG puesto a MINSAL ni viceversa. El ISP «confirmó» y MINSAL «informó»: el borrador lo distingue en la FAQ pero lo mezcla en el bloque «cifras» (ver zancudo).
+- Mosquito/zancudo: bien tratado salvo los dos reparos indicados.
+- Riesgos sanitarios de palomas: no se afirma ninguno. La oficina sí los afirma («enfermedades, alergias»); correctamente no se replican.
+- Notas `plagas-4-6-notas.md`: «Ley 19.473... no pude abrirla» ya es obsoleto; el XML BCN abre y confirma el texto citado (versión 2023-09-06). La nota dice «el carné ... solo a quien cace con rifle de aire comprimido» (correcto) y «prohíbe... control simultáneo de otras plagas» (correcto).
+
+## 6. Lo que NO pude verificar y por qué
+- La Ley 19.473 en leychile.cl por navegador (usé solo el XML de BCN, que funcionó; no probé la URL navegable `leychile.cl/navegar?idNorma=30840`, que mi shell zsh interpretó mal por el «?»).
+- Que la oficina o sus sucursales NO tengan servicios de captura de palomas ni autorización del SAG: la página lista lo que ofrece, no lo que no ofrece; solo se puede decir «no publica».
+- Que el servicio sea «presencial» en la oficina chilena: no consta en la página de servicios; sitio-actual solo menciona «visitas regulares».
+- Fecha de consulta de contacto.txt y sucursales.txt: no los reabrí línea por línea para esta auditoría (no contienen datos usados en estos tres JSON).
+- Moroni y Camousseight (1975/1976) y Faúndez y Carvajal (2011): solo la cita que hace Pérez; no abrí los originales.
+- DS 157/2005: el XML BCN que obtuve muestra fechaVersion 2007-06-30; no verifiqué si hay modificaciones posteriores a los arts. 81, 85 y 101. DS 977 (versión 2026-06-19) y DS 594 (2026-01-16) están vigentes en BCN.
+- Existencia actual de enlaces: `minsal.cl/?p=7976` descargó la nota del 18-abr-2016 sin problema; la URL del PDF de la UACh descargó, pero no probé que siga disponible a futuro.
+- Quién redactó o revisó la voz: no se aplicó `scripts/voz-humana.py` (no hay repo).
+
+Ruta del informe: /Users/bvasquez/Developer/TNI/Proyectos/Truly Inbound/truly-inbound-chile/docs/design/oficinas/chile/borrador-paginas/auditoria-plagas-4-6.md

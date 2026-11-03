@@ -1,0 +1,114 @@
+{
+  "titulo": "Control de plagas para industria",
+  "resumen": "Programa TEPS: evaluación de la instalación, implementación, monitoreo de dispositivos e informe mensual en línea para negocios con procesos de inocuidad.",
+  "intro": "En un establecimiento de alimentos, el DS 977 pide un programa preventivo contra las plagas (art. 47). Ofrecemos TEPS, un programa propio y exclusivo de Truly Nolen que, según la oficina, «permite dar cumplimiento a todas las normativas existentes para los procesos de inocuidad», entre ellas HACCP, BRC Global, FSMA, IFS, FSSC 22000, SQF e ISO 22000.",
+  "imagen": "pendiente: foto real de Truly",
+  "bloques": {
+    "tarjetas": [
+      {
+        "titulo": "Programa TEPS",
+        "texto": "Es un programa para negocios que organiza la prevención y el control de plagas con trazabilidad, manejo de registros, evaluación e implementación de mejoras."
+      },
+      {
+        "titulo": "Plan de tres zonas",
+        "texto": "Todo servicio parte con el plan de zonas verde, amarilla y roja. En la zona roja, de alto riesgo, evitamos usar químicos por riesgo de contaminación."
+      },
+      {
+        "titulo": "Informe en línea",
+        "texto": "El programa incluye un informe mensual y un análisis de tendencia en línea."
+      },
+      {
+        "titulo": "Capacitación y seguros",
+        "texto": "Ofrecemos capacitar a gerentes y empleados en higiene y sanitización, y tenemos contratados seguros de responsabilidad civil por daños a terceros."
+      }
+    ],
+    "tabla": {
+      "titulo": "Los 4 componentes del programa TEPS",
+      "filas": [
+        [
+          [
+            "Componentes",
+            "Programa TEPS"
+          ],
+          [
+            "1. Evaluación de la instalación.",
+            "2. Desarrollo e implementación.",
+            "3. Monitoreo sistemático de los dispositivos.",
+            "4. Informe mensual y análisis de tendencia en línea."
+          ]
+        ],
+        [
+          [
+            "Normas de inocuidad que mencionamos",
+            "Fuente: trulynolen.cl/programa-teps/"
+          ],
+          [
+            "HACCP",
+            "BRC Global",
+            "FSMA (ley de modernización de la inocuidad alimentaria de la FDA de Estados Unidos)",
+            "IFS",
+            "FSSC 22000",
+            "SQF",
+            "ISO 22000"
+          ]
+        ],
+        [
+          [
+            "Qué norma aplica y qué puede pedir usted",
+            "Normas chilenas"
+          ],
+          [
+            "DS 977/96, art. 47: programa preventivo eficaz y continuo de lucha contra las plagas, con inspección periódica del establecimiento y su entorno.",
+            "DS 977/96, art. 48: la erradicación solo la hacen empresas autorizadas por la autoridad sanitaria.",
+            "DS 157/2005, art. 85: diagnóstico antes de cada aplicación de plaguicidas de uso especializado, que consta en un certificado entregado al usuario al terminar. Art. 101: certificado de los tratamientos, emitido por el responsable técnico.",
+            "DS 594, art. 11: en los lugares de trabajo deben tomarse medidas efectivas contra insectos, roedores y otras plagas de interés sanitario."
+          ]
+        ]
+      ]
+    },
+    "preguntas": [
+      {
+        "pregunta": "¿Qué es el programa TEPS?",
+        "respuesta": "Es nuestro programa propio para la gestión de plagas de un negocio, con cuatro componentes: evaluación de instalación, desarrollo e implementación, monitoreo sistemático de dispositivos, e informe mensual con análisis de tendencia en línea."
+      },
+      {
+        "pregunta": "¿TEPS reemplaza una certificación como BRC o FSSC 22000?",
+        "respuesta": "Esa respuesta la define cada esquema de certificación; consulte a su certificadora."
+      },
+      {
+        "pregunta": "¿Qué exige la norma chilena a una planta de alimentos?",
+        "respuesta": "El DS 977/96 pide un programa preventivo eficaz y continuo contra plagas (art. 47) y que la erradicación la haga una empresa autorizada (art. 48)."
+      },
+      {
+        "pregunta": "¿Qué puede pedir a la empresa aplicadora?",
+        "respuesta": "Al terminar una aplicación de plaguicidas de uso especializado, la empresa debe entregarle un certificado con el diagnóstico (DS 157, art. 85) y el certificado de los tratamientos realizados, emitido por su responsable técnico (art. 101)."
+      }
+    ],
+    "fuentes": [
+      [
+        "Truly Nolen Chile, Programa TEPS (leído el 2 de noviembre de 2026)",
+        "https://trulynolen.cl/programa-teps/"
+      ],
+      [
+        "Truly Nolen Chile, Servicios",
+        "https://trulynolen.cl/trulynolen-servicios/"
+      ],
+      [
+        "Truly Nolen Chile, ¿Por qué elegirnos?",
+        "https://trulynolen.cl/truly-nolen-por-que-elegirnos/"
+      ],
+      [
+        "BCN, DS 977/96",
+        "https://www.bcn.cl/leychile/navegar?idNorma=71271"
+      ],
+      [
+        "BCN, DS 157/2005",
+        "https://www.bcn.cl/leychile/navegar?idNorma=262263"
+      ],
+      [
+        "BCN, DS 594",
+        "https://www.bcn.cl/leychile/navegar?idNorma=167766"
+      ]
+    ]
+  }
+}
