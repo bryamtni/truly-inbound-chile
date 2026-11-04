@@ -1,9 +1,9 @@
 # Candidatas de portada — Chile (chile)
 
 - **Fecha de inicio:** 2026-11-03
-- **Modo por banco:** Pexels <api|navegador|manual> · Unsplash <…> · Commons <api|navegador>
-- **F0 · ¿Foto propia?** <respuesta del dueño>
-- **Criterios usados:** `referencias/criterios-anexo-b.md` (<copia del AAAA-MM-DD | receta instalada>)
+- **Modo por banco:** Pexels navegador (sin clave, C-16) · Unsplash api (consultas puntuales; un agente desde el 2026-11-04, C-17) · Commons api
+- **F0 · ¿Foto propia?** No hay; Truly Chile no ha pasado ninguna (ver «Arranque»).
+- **Criterios usados:** Anexo B de la receta `truly-inbound` instalada (coincide con la copia `referencias/criterios-anexo-b.md` de la receta de portada; revisado el 2026-11-04)
 
 ## Ficha de candidata (copiar una por foto)
 
