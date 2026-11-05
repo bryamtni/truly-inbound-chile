@@ -13,3 +13,6 @@
 *.mov
 *.zip
 *.bundle
+
+# Material que manda Roger (paquetes y recetas): solo local, se borra al terminar
+Roger/
