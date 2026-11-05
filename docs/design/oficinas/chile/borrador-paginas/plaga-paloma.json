@@ -1,6 +1,6 @@
 {
   "titulo": "Paloma (Columba livia) en zonas urbanas de Chile",
-  "intro": "En área urbana, la captura o caza de palomas no la decide una empresa: la Ley 19.473 (Caza) la prohíbe y solo el Servicio Agrícola y Ganadero (SAG), fuera de áreas protegidas, puede autorizarla. En Truly Nolen Chile ofrecemos TRULY PIGEONS AWAY.",
+  "intro": "En área urbana, la captura o caza de palomas no la decide una empresa: la Ley 19.473 (Caza) la prohíbe y solo el Servicio Agrícola y Ganadero (SAG), fuera de áreas protegidas, puede autorizarla. En Truly Nolen Chile ofrecemos Truly Pigeons Away.",
   "bloques": [
     {
       "tipo": "tarjetas",
@@ -19,7 +19,7 @@
         },
         {
           "titulo": "Qué hacemos",
-          "texto": "TRULY PIGEONS AWAY es, según la oficina, un sistema que repele las palomas sin químicos y sin comprometer el diseño de la infraestructura. En área urbana, la autorización de captura o caza corresponde al SAG."
+          "texto": "Truly Pigeons Away es, según la oficina, un sistema que repele las palomas sin químicos y sin comprometer el diseño de la infraestructura. En área urbana, la autorización de captura o caza corresponde al SAG."
         }
       ]
     },
@@ -46,44 +46,18 @@
       ]
     },
     {
-      "tipo": "tabla",
+      "tipo": "prosa",
       "titulo": "Condiciones de la Resolución Exenta SAG 718/2016 (Iquique, 5 de julio de 2016)",
-      "columnas": [
-        "Condición",
-        "Qué dice"
-      ],
-      "filas": [
-        [
-          "A quién autoriza",
-          "A una sola empresa, GREEN PEST CONTROL SPA; no es una autorización general"
-        ],
-        [
-          "Qué autoriza",
-          "La captura y caza de palomas (Columba livia) con fines de control, dentro de inmuebles"
-        ],
-        [
-          "Vigencia y lugar",
-          "Dos años desde la fecha de la resolución, solo dentro de inmuebles de la Región de Tarapacá"
-        ],
-        [
-          "Aviso previo",
-          "Informe al SAG con cinco días hábiles de anticipación a las labores, con dirección del inmueble, método, personal y autorización del propietario"
-        ],
-        [
-          "Carné de caza",
-          "Exigido solo a quien use rifle de aire comprimido"
-        ],
-        [
-          "Tóxicos",
-          "Prohibido el uso de cualquier tipo de tóxicos y psicotrópicos como método de control"
-        ]
+      "parrafos": [
+        "La resolución es para una sola empresa autorizada por el SAG: no es una autorización general. Le permite la captura y caza de palomas (Columba livia) con fines de control, dentro de inmuebles de la Región de Tarapacá, por dos años desde la fecha de la resolución.",
+        "La empresa debe informar al SAG con cinco días hábiles de anticipación a las labores, con la dirección del inmueble, el método, el personal y la autorización del propietario. El carné de caza se exige solo a quien use rifle de aire comprimido, y se prohíbe el uso de cualquier tipo de tóxicos y psicotrópicos como método de control."
       ]
     },
     {
       "tipo": "cifras",
       "items": [
         {
-          "dato": "Vigencia de dos años y aviso previo de cinco días hábiles, en la autorización que el SAG Tarapacá dio a GREEN PEST CONTROL SPA en 2016",
+          "dato": "Vigencia de dos años y aviso previo de cinco días hábiles, en la autorización que el SAG Tarapacá dio en 2016 a una empresa autorizada por el SAG",
           "anio": "2016",
           "fuente": "SAG, Resolución Exenta 718/2016"
         }
@@ -108,7 +82,7 @@
     },
     {
       "pregunta": "¿Qué ofrece Truly Nolen Chile para las palomas?",
-      "respuesta": "Ofrecemos TRULY PIGEONS AWAY, un sistema que repele las palomas. Consúltenos cómo se aplica a su caso."
+      "respuesta": "Ofrecemos Truly Pigeons Away, un sistema que repele las palomas. Consúltenos cómo se aplica a su caso."
     },
     {
       "pregunta": "¿Qué exigió el SAG en 2016 a la empresa autorizada en Tarapacá?",

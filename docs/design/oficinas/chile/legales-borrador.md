@@ -8,7 +8,7 @@ Van en `legales` de la ficha (Anexo C: un párrafo cada una) y sus descripciones
 > Truly Nolen Chile usa los datos que usted comparte en este sitio o en la conversación con Truly AI solo para responder su consulta y coordinar la visita. Para preguntar por sus datos o pedir que se eliminen, llame al +56 22 784 4400.
 
 **Términos** (no existen en el sitio actual)
-> Truly Nolen Chile, casa matriz en Avenida Presidente Kennedy 8028, Vitacura, Santiago. La información de este sitio es general: los servicios, la cobertura de cada sucursal, los precios y las condiciones se confirman directamente con Truly Nolen Chile antes de cada servicio.
+> Truly Nolen Chile tiene su casa matriz en Avenida Presidente Kennedy 8028, Vitacura, Santiago. La información de este sitio es general: los servicios, la cobertura de cada sucursal, los precios y las condiciones se confirman directamente con Truly Nolen Chile antes de cada servicio.
 
 **Accesibilidad** (no existe en el sitio actual)
 > Este sitio se puede recorrer con el teclado, con un lector de pantalla y desde el celular. Si algo no le funciona, llame al +56 22 784 4400 o cuénteselo a Truly AI en el chat.

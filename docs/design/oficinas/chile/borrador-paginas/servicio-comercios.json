@@ -1,7 +1,7 @@
 {
   "titulo": "Control de plagas para comercios",
   "resumen": "Control de plagas para negocios de alimentos y otros lugares de trabajo, con visitas regulares.",
-  "intro": "Para un comercio, las normas sanitarias piden medidas contra las plagas. Atendemos roedores, insectos rastreros y voladores, termitas, palomas y sanitización ambiental, y publicamos la resolución sanitaria de cada sucursal.",
+  "intro": "Para un comercio, las normas sanitarias piden medidas contra las plagas. Atendemos roedores, insectos rastreros y voladores, termitas, palomas y sanitización ambiental, y publicamos la resolución sanitaria de cada sucursal, con su número y mes.",
   "imagen": "pendiente: foto real de Truly",
   "bloques": {
     "tarjetas": [
@@ -22,51 +22,6 @@
         "texto": "Hacemos sanitización ambiental de superficies y, para palomas, usamos un sistema llamado Truly Pigeons Away, que según la oficina no usa químicos."
       }
     ],
-    "tabla": {
-      "titulo": "Qué norma aplica y qué puede pedir usted",
-      "filas": [
-        [
-          [
-            "Reglamento Sanitario de los Alimentos",
-            "DS 977/96, MINSAL"
-          ],
-          [
-            "Art. 47: el establecimiento debe tener un programa preventivo eficaz y continuo de lucha contra las plagas, con inspección periódica del local y su entorno.",
-            "Art. 48: la erradicación de plagas con agentes químicos, físicos o biológicos solo puede hacerla una empresa autorizada por la autoridad sanitaria."
-          ]
-        ],
-        [
-          [
-            "Reglamento de pesticidas de uso sanitario y doméstico",
-            "DS 157/2005, MINSAL"
-          ],
-          [
-            "Art. 81: los plaguicidas de venta especializada solo los aplican empresas autorizadas por la autoridad sanitaria, con personal que tenga la capacitación que contempla el reglamento.",
-            "Art. 85: antes de cada aplicación de plaguicidas de uso especializado, la empresa realiza un diagnóstico (plaga, producto, plan de aplicación y recomendaciones) y lo entrega al usuario en un certificado al terminar.",
-            "Art. 95: las empresas aplicadoras de plaguicidas de uso doméstico y sanitario deben contar con la autorización de la autoridad sanitaria del territorio donde están sus instalaciones.",
-            "Art. 101: al terminar la aplicación, la empresa entrega a sus clientes un certificado de los tratamientos realizados, emitido por el responsable técnico."
-          ]
-        ],
-        [
-          [
-            "Condiciones sanitarias en lugares de trabajo",
-            "DS 594, MINSAL"
-          ],
-          [
-            "Art. 11: los lugares de trabajo deben mantenerse en buenas condiciones de orden y limpieza, y deben tomarse medidas efectivas para evitar la entrada o eliminar la presencia de insectos, roedores y otras plagas de interés sanitario. El reglamento rige para todo lugar de trabajo (art. 1)."
-          ]
-        ],
-        [
-          [
-            "Lo que publicamos",
-            "Sucursales"
-          ],
-          [
-            "Nuestra página de sucursales muestra la resolución sanitaria de cada una, con su número y mes."
-          ]
-        ]
-      ]
-    },
     "preguntas": [
       {
         "pregunta": "¿Un local de alimentos está obligado a tener un programa contra plagas?",
@@ -78,7 +33,7 @@
       },
       {
         "pregunta": "¿Qué documentos puede pedirle a la empresa?",
-        "respuesta": "Al terminar una aplicación de plaguicidas de uso especializado, la empresa debe entregarle un certificado con el diagnóstico (DS 157, art. 85) y el certificado de los tratamientos realizados, emitido por su responsable técnico (art. 101)."
+        "respuesta": "Al terminar una aplicación de plaguicidas de uso especializado, la empresa debe entregarle un certificado con el diagnóstico (plaga, producto, plan de aplicación y recomendaciones), según el DS 157, art. 85, y el certificado de los tratamientos realizados, emitido por su responsable técnico (art. 101)."
       },
       {
         "pregunta": "¿Qué dice la norma para un lugar de trabajo que no vende alimentos?",
@@ -110,6 +65,15 @@
         "Truly Nolen Chile, Sucursales",
         "https://trulynolen.cl/sucursales-trulynolen-chile/"
       ]
+    ],
+    "prosa": [
+      {
+        "titulo": "Qué norma aplica y qué puede pedir usted",
+        "parrafos": [
+          "Según el tipo de comercio, aplican tres reglamentos del MINSAL: el Reglamento Sanitario de los Alimentos (DS 977/96), el reglamento de pesticidas de uso sanitario y doméstico (DS 157/2005) y el de condiciones sanitarias y ambientales en los lugares de trabajo (DS 594). El DS 157/2005 dispone que los plaguicidas de venta especializada solo los aplican empresas autorizadas por la autoridad sanitaria, con personal que tenga la capacitación que contempla el reglamento (art. 81), y que esas empresas cuenten con la autorización de la autoridad sanitaria del territorio donde están sus instalaciones (art. 95).",
+          "El DS 594 rige para todo lugar de trabajo (art. 1), venda o no alimentos, y pide además mantenerlo en buenas condiciones de orden y limpieza (art. 11)."
+        ]
+      }
     ]
   }
 }

@@ -47,29 +47,10 @@
       ]
     },
     {
-      "tipo": "tabla",
+      "tipo": "prosa",
       "titulo": "Medidas de prevención que cita el MINSAL",
-      "columnas": [
-        "Medida",
-        "Fuente"
-      ],
-      "filas": [
-        [
-          "No tocar roedores",
-          "MINSAL, nota del 28 de julio de 2026"
-        ],
-        [
-          "Ventilar las casas antes de entrar si han estado cerradas",
-          "MINSAL, nota del 28 de julio de 2026"
-        ],
-        [
-          "Limpiar con agua y cloro los espacios sin uso",
-          "MINSAL, nota del 28 de julio de 2026"
-        ],
-        [
-          "Mantener la basura tapada y los alimentos resguardados",
-          "MINSAL, nota del 28 de julio de 2026"
-        ]
+      "parrafos": [
+        "En su nota del 28 de julio de 2026, el MINSAL recomienda no tocar roedores, ventilar las casas antes de entrar si han estado cerradas, limpiar con agua y cloro los espacios sin uso, y mantener la basura tapada y los alimentos resguardados."
       ]
     },
     {

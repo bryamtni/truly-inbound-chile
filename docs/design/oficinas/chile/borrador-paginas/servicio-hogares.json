@@ -1,7 +1,7 @@
 {
   "titulo": "Control de plagas para hogares",
   "resumen": "Plan de protección por zonas, visitas regulares y control de roedores, insectos y termitas para casas.",
-  "intro": "Las plagas no aparecen mágicamente: buscan puntos de entrada hacia la comida y el agua que necesitan. Por eso cada servicio parte con un plan de protección de tres zonas, que va de la defensa perimetral a la zona crítica.",
+  "intro": "Las plagas no aparecen mágicamente: buscan puntos de entrada hacia la comida y el agua que necesitan.",
   "imagen": "pendiente: foto real de Truly",
   "bloques": {
     "tarjetas": [
@@ -14,43 +14,10 @@
         "texto": "A partir del servicio inicial le hacemos visitas regulares, de día o de noche, según usted lo requiera, sin que tenga que llamarnos."
       },
       {
-        "titulo": "Insectos rastreros y voladores",
-        "texto": "Atendemos insectos rastreros y voladores; entre estos últimos, moscas, zancudos, polillas y avispas. También atendemos roedores y termitas."
-      },
-      {
         "titulo": "Regreso sin costo adicional",
         "texto": "Volvemos sin costo adicional hasta asegurar el control de la plaga, de acuerdo con su contrato anual."
       }
     ],
-    "tabla": {
-      "titulo": "Servicios que ofrecemos",
-      "filas": [
-        [
-          [
-            "Lo que hacemos",
-            "Fuente: trulynolen.cl"
-          ],
-          [
-            "Un plan de protección por tres zonas: verde, amarilla y roja.",
-            "Roedores: control con cebos rodenticidas.",
-            "Insectos voladores (moscas, zancudos, polillas, avispas): requieren tratamientos especiales, que hemos diseñado para cada caso.",
-            "Insectos rastreros: también los atendemos.",
-            "Termitas subterráneas y de madera seca: cada tipo requiere un tratamiento distinto, con planes preventivos y curativos.",
-            "Sanitización ambiental de superficies con equipo pulverizador, que atomiza una fina gota de solución desinfectante."
-          ]
-        ],
-        [
-          [
-            "Plagas que preocupan en un hogar chileno",
-            "Fuentes del Ministerio de Salud"
-          ],
-          [
-            "Araña de rincón: según la guía del MINSAL (2016), habita en el interior de las casas, urbanas y rurales, en lugares secos y oscuros.",
-            "Ratón colilargo: según el MINSAL, vive en zonas rurales y semirurales de casi todo el país y está presente todo el año; transmite el hantavirus."
-          ]
-        ]
-      ]
-    },
     "cifras": [
       {
         "valor": "44",
@@ -70,11 +37,7 @@
       },
       {
         "pregunta": "¿Qué recomienda el MINSAL en la vivienda frente al ratón colilargo?",
-        "respuesta": "No tocar roedores, ventilar la casa antes de entrar si estuvo cerrada, limpiar con agua y cloro los espacios sin uso, y mantener la basura tapada y los alimentos resguardados. La alerta sanitaria por hantavirus está vigente hasta el 31 de julio de 2027."
-      },
-      {
-        "pregunta": "¿Qué pasa si la plaga vuelve?",
-        "respuesta": "Volvemos sin costo adicional hasta asegurar el control de la plaga, de acuerdo con su contrato anual."
+        "respuesta": "Según el MINSAL, el ratón colilargo vive en zonas rurales y semirurales de casi todo el país, está presente todo el año y transmite el hantavirus. Recomienda no tocar roedores, ventilar la casa antes de entrar si estuvo cerrada, limpiar con agua y cloro los espacios sin uso, y mantener la basura tapada y los alimentos resguardados. La alerta sanitaria por hantavirus está vigente hasta el 31 de julio de 2027."
       },
       {
         "pregunta": "¿Atienden zancudos?",
@@ -98,6 +61,15 @@
         "MINSAL, Departamento de Enfermedades Transmisibles, Guía para el Manejo de Mordedura de Araña de los Rincones – Loxosceles laeta, 2016 (copia alojada en la Universidad Mayor)",
         "https://postgrados.umayor.cl/wp-content/uploads/2020/02/Guía-para-el-Manejo-de-Mordedura-de-Araña-de-los-Rincones-Loxosceles-laeta.pdf"
       ]
+    ],
+    "prosa": [
+      {
+        "titulo": "Servicios que ofrecemos",
+        "parrafos": [
+          "Para los roedores usamos cebos rodenticidas. Atendemos insectos rastreros y voladores; los voladores, como moscas, zancudos, polillas y avispas, requieren tratamientos especiales, que hemos diseñado para cada caso.",
+          "Con las termitas, cada tipo pide un tratamiento distinto: para las subterráneas y las de madera seca tenemos planes preventivos y curativos. La sanitización ambiental de superficies la hacemos con un equipo pulverizador, que atomiza una fina gota de solución desinfectante."
+        ]
+      }
     ]
   }
 }

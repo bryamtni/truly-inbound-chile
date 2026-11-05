@@ -1,0 +1,166 @@
+{
+  "_fuente": "https://trulynolen.cl/sucursales-trulynolen-chile/ — leída en vivo el 5-nov-2026 (HTML de la página, no resumen). Regiones con su nombre actual (Chillán en Ñuble desde 2018; Valdivia en Los Ríos; la página dice VIII y XVI). Teléfonos con los mismos dígitos que publica la página, en formato +56 2 XXXX XXXX.",
+  "_solo_ciudad": "Los Ángeles (repite la dirección de Concepción, en Talcahuano); Curicó y Talca (misma dirección, escrita «Montucci» y «Montuca»). Regla del dueño (5-nov): si un dato falta o no cuadra, solo la ciudad.",
+  "cobertura": "Cobertura de Arica a Chaitén, con oficinas cumpliendo las resoluciones sanitarias de cada región.",
+  "casaMatriz": {
+    "region": "Región Metropolitana",
+    "ciudad": "Santiago",
+    "direccion": "Avenida Presidente Kennedy 8028, Vitacura",
+    "telefono": "+56 22 784 4400",
+    "resolucion": "0227, febrero de 1999"
+  },
+  "sucursales": [
+    {
+      "region": "Arica y Parinacota",
+      "ciudad": "Arica",
+      "direccion": "Magallanes 1410, sector Magisterio",
+      "telefono": "+56 58 225 1490",
+      "resolucion": "0227, febrero de 1999"
+    },
+    {
+      "region": "Tarapacá",
+      "ciudad": "Iquique",
+      "direccion": "Av. Salvador Allende 3138",
+      "telefono": "+56 2 2863 7234",
+      "resolucion": "0227, febrero de 1999"
+    },
+    {
+      "region": "Antofagasta",
+      "ciudad": "Antofagasta",
+      "direccion": "Av. Argentina 1154",
+      "telefono": "+56 2 2863 7238",
+      "resolucion": "3391, agosto de 2004"
+    },
+    {
+      "region": "Antofagasta",
+      "ciudad": "Calama",
+      "direccion": "Av. Granaderos 4297",
+      "telefono": "+56 2 2863 7238",
+      "resolucion": "971, abril de 2010"
+    },
+    {
+      "region": "Atacama",
+      "ciudad": "Copiapó",
+      "direccion": "O’Higgins 1268-A",
+      "telefono": "+56 2 2863 7268",
+      "resolucion": "20, junio de 2008"
+    },
+    {
+      "region": "Coquimbo",
+      "ciudad": "La Serena",
+      "direccion": "Amunátegui 431",
+      "telefono": "+56 2 2863 7274",
+      "resolucion": "1541, abril de 2016"
+    },
+    {
+      "region": "Coquimbo",
+      "ciudad": "Ovalle",
+      "direccion": "Av. Laura Pizarro 1641, Villa San Esteban",
+      "telefono": "+56 2 2863 7274",
+      "resolucion": "1541, abril de 2016"
+    },
+    {
+      "region": "Valparaíso",
+      "ciudad": "San Felipe",
+      "direccion": "Diego de Almagro 930",
+      "telefono": "+56 2 2863 7292",
+      "resolucion": "16666, noviembre de 2007"
+    },
+    {
+      "region": "Valparaíso",
+      "ciudad": "Viña del Mar",
+      "direccion": "Carlos Ibáñez del Campo 3340",
+      "telefono": "+56 2 2863 7292",
+      "resolucion": "2519, julio de 2011"
+    },
+    {
+      "region": "Valparaíso",
+      "ciudad": "San Antonio",
+      "direccion": "Av. Marina 1827",
+      "telefono": "+56 2 2863 7292",
+      "resolucion": "16666, noviembre de 2007"
+    },
+    {
+      "region": "O’Higgins",
+      "ciudad": "Rancagua",
+      "direccion": "Longitudinal Sur km 92, sector Gultro s/n (ex Ruta 5), Olivar",
+      "telefono": "+56 22 784 4400",
+      "resolucion": "3692, agosto de 2012"
+    },
+    {
+      "region": "O’Higgins",
+      "ciudad": "San Fernando",
+      "direccion": "Gladys Theim 971, Jardines del Sur",
+      "telefono": "+56 22 784 4400",
+      "resolucion": "3692, agosto de 2012"
+    },
+    {
+      "region": "Maule",
+      "ciudad": "Curicó"
+    },
+    {
+      "region": "Maule",
+      "ciudad": "Talca"
+    },
+    {
+      "region": "Ñuble",
+      "ciudad": "Chillán",
+      "direccion": "Isabel Riquelme 478",
+      "telefono": "+56 2 2863 7329",
+      "resolucion": "1760, abril de 2010"
+    },
+    {
+      "region": "Biobío",
+      "ciudad": "Concepción",
+      "direccion": "Cristóbal Colón 3990, sector Las Salinas, Talcahuano",
+      "telefono": "+56 2 2863 7329",
+      "resolucion": "1760, abril de 2010"
+    },
+    {
+      "region": "Biobío",
+      "ciudad": "Los Ángeles"
+    },
+    {
+      "region": "La Araucanía",
+      "ciudad": "Temuco",
+      "direccion": "Rudecindo Ortega 01075",
+      "telefono": "+56 45 222 5447",
+      "resolucion": "A20/406, 10 de enero de 2017"
+    },
+    {
+      "region": "La Araucanía",
+      "ciudad": "Villarrica",
+      "direccion": "Saturnino Epulef 1429/B",
+      "telefono": "+56 2 2863 7360",
+      "resolucion": "A20/406, 10 de enero de 2017"
+    },
+    {
+      "region": "Los Ríos",
+      "ciudad": "Valdivia",
+      "direccion": "Las Horquetas 011",
+      "telefono": "+56 2 2863 7360",
+      "resolucion": "1979, agosto de 2011"
+    },
+    {
+      "region": "Los Lagos",
+      "ciudad": "Osorno",
+      "direccion": "Av. Zenteno 1431",
+      "telefono": "+56 2 2863 7372",
+      "resolucion": "2464, febrero de 2012"
+    },
+    {
+      "region": "Los Lagos",
+      "ciudad": "Puerto Montt",
+      "direccion": "Vía Romana 1801, Cardonal",
+      "telefono": "+56 2 2863 7372",
+      "resolucion": "1546, diciembre de 2008"
+    },
+    {
+      "region": "Los Lagos",
+      "ciudad": "Castro (Chiloé)",
+      "direccion": "Panamericana Norte km 3,5 n.º 3464",
+      "telefono": "+56 2 2863 7372",
+      "resolucion": "45, octubre de 2009"
+    }
+  ]
+}

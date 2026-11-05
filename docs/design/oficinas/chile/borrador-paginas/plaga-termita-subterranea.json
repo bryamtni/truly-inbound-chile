@@ -41,25 +41,10 @@
       ]
     },
     {
-      "tipo": "tabla",
-      "titulo": "Termitas según el artículo de 2008 y nuestro sitio",
-      "columnas": [
-        "Tipo",
-        "Qué se indica"
-      ],
-      "filas": [
-        [
-          "Familias presentes antes de la subterránea",
-          "Kalotermitidae y Termopsidae (Karsulovic et al., 2008)"
-        ],
-        [
-          "Termita subterránea",
-          "Familia Rhinotermitidae (Karsulovic et al., 2008)"
-        ],
-        [
-          "Grupos de termitas que distinguimos",
-          "Subterráneas y de madera seca; consulte sobre los planes preventivos y curativos"
-        ]
+      "tipo": "prosa",
+      "titulo": "Las familias de termitas en Chile",
+      "parrafos": [
+        "Según Karsulovic y otros (2008), antes de la termita subterránea ya había en el país dos familias de termitas: Kalotermitidae y Termopsidae. La termita subterránea pertenece a la familia Rhinotermitidae."
       ]
     },
     {
@@ -106,5 +91,6 @@
     ]
   ],
   "imagen": "pendiente: foto real de Truly (Truly Nolen International o trulynolen.com)",
-  "imagenOrigen": "pendiente"
+  "imagenOrigen": "pendiente",
+  "avance": "Deja túneles de barro, castas voladoras y daños en la madera. Un artículo de 2008 indica que se ha detectado en la Región Metropolitana y en la de Valparaíso."
 }

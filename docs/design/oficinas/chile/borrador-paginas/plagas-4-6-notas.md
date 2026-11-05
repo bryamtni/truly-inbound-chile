@@ -27,3 +27,10 @@ Fecha: 2026-11-02. Archivos: plaga-cucaracha-alemana.json, plaga-zancudo.json, p
 
 ## Pendiente (solo en el archivo de preguntas)
 Ver `preguntas-para-la-oficina-plagas-4-6.md`. Además: foto real de Truly (`imagen` e `imagenOrigen` dicen «pendiente» en los tres JSON).
+
+## 5-nov-2026 · tablas a prosa (todas las plagas)
+Según la receta (vuelta 5, punto d), solo las filas planas «norma/numeral/referencia → qué pide» se quedan como
+líneas de campo: «Normas chilenas…» (cucaracha alemana), «Normas sanitarias…» (ratón colilargo) y «Qué dice la ley…»
+(paloma). Las demás tablas de las seis plagas pasaron a `tipo: prosa` con los mismos datos; la nota «Fuente:» de las
+medidas del ratón colilargo salió del texto (la fuente sigue en la lista de fuentes). «Termitas según el artículo de
+2008 y nuestro sitio» se tituló «Las familias de termitas en Chile».

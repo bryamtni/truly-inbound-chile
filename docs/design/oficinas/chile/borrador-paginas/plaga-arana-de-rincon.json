@@ -47,51 +47,18 @@
       ]
     },
     {
-      "tipo": "tabla",
+      "tipo": "prosa",
       "titulo": "Algunas medidas preventivas que cita la guía del MINSAL (2016)",
-      "columnas": [
-        "Medida"
-      ],
-      "filas": [
-        [
-          "Separar las camas 10 cm de los muros"
-        ],
-        [
-          "No colgar ropa ni toallas en los muros"
-        ],
-        [
-          "Aspirar prolijamente y en forma periódica"
-        ],
-        [
-          "Revisar y sacudir la ropa y los zapatos antes de ponérselos"
-        ],
-        [
-          "Revisar la cama y los rincones antes de acostarse"
-        ],
-        [
-          "Impedir el ingreso desde el exterior obturando conductos eléctricos y de cañerías"
-        ],
-        [
-          "Usar guantes y calzado adecuado para mover objetos apilados por mucho tiempo"
-        ]
+      "parrafos": [
+        "La guía recomienda separar las camas 10 cm de los muros y no colgar ropa ni toallas en ellos. También aconseja aspirar prolijamente y en forma periódica, revisar y sacudir la ropa y los zapatos antes de ponérselos, y revisar la cama y los rincones antes de acostarse.",
+        "Para impedir el ingreso desde el exterior, indica obturar los conductos eléctricos y de cañerías. Para mover objetos apilados por mucho tiempo, recomienda usar guantes y calzado adecuado."
       ]
     },
     {
-      "tipo": "tabla",
+      "tipo": "prosa",
       "titulo": "Si hay una mordedura, según la guía del MINSAL",
-      "columnas": [
-        "Indicación"
-      ],
-      "filas": [
-        [
-          "Lavar la herida con agua y jabón y dejar en reposo el miembro afectado"
-        ],
-        [
-          "Conservar la araña, viva en un recipiente con tapa o muerta en un recipiente seco, y no aplastarla"
-        ],
-        [
-          "Permanecer tranquilo e ir al Servicio de Urgencia más cercano"
-        ]
+      "parrafos": [
+        "La guía indica lavar la herida con agua y jabón y dejar en reposo el miembro afectado. Pide conservar la araña sin aplastarla, viva en un recipiente con tapa o muerta en un recipiente seco, permanecer tranquilo e ir al Servicio de Urgencia más cercano."
       ]
     },
     {

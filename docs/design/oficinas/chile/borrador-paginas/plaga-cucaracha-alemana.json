@@ -34,25 +34,10 @@
       ]
     },
     {
-      "tipo": "tabla",
+      "tipo": "prosa",
       "titulo": "Dónde se ha registrado la especie en Chile, según el estudio de 2015",
-      "columnas": [
-        "Zona",
-        "Qué dice la fuente"
-      ],
-      "filas": [
-        [
-          "Santiago e Isla de Pascua",
-          "Citada por Moroni y Camousseight en los años 70, según el estudio"
-        ],
-        [
-          "Región de Magallanes",
-          "Citada por Faúndez y Carvajal (2011), según el estudio"
-        ],
-        [
-          "La Serena y Coquimbo",
-          "Primer registro formal en el norte de Chile continental (muestras de 2013)"
-        ]
+      "parrafos": [
+        "Según el estudio, Moroni y Camousseight la citaron para Santiago e Isla de Pascua en los años 70, y Faúndez y Carvajal (2011), para la Región de Magallanes. El propio estudio entrega el primer registro formal en el norte de Chile continental, en La Serena y Coquimbo, con muestras de 2013."
       ]
     },
     {
@@ -134,5 +119,6 @@
     ]
   ],
   "imagen": "pendiente: foto real de Truly (Truly Nolen International o trulynolen.com)",
-  "imagenOrigen": "pendiente"
+  "imagenOrigen": "pendiente",
+  "avance": "Es más pequeña que otras cucarachas comunes y se reconoce por dos bandas pardas en el tórax. En La Serena y Coquimbo se encontró de noche, junto a restaurantes y contenedores de basura."
 }

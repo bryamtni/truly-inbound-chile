@@ -32,3 +32,9 @@ Ninguna afirmación sin fuente en los textos públicos tras la auditoría del 2 
 - https://www.bcn.cl/leychile/consulta/obtxml?opt=7&idNorma=262263 (DS 157, leído completo)
 - https://www.bcn.cl/leychile/consulta/obtxml?opt=7&idNorma=167766 (DS 594, leído completo)
 - https://www.bcn.cl/leychile/consulta/obtxml?opt=7&idNorma=71271 (DS 977, descargado completo y buscado con Python)
+
+## 5-nov-2026 · tablas a prosa
+La regla del paquete («nada de tablas en servicio, plaga o artículo: prosa como globaltni») pidió pasar a prosa las
+tablas de los tres servicios. Se cambió `bloques.tabla` por `bloques.prosa` (secciones con título y párrafos) con los
+mismos datos y las mismas citas; las notas «Fuente: trulynolen.cl…» salieron del texto (las fuentes siguen en la lista
+de fuentes de cada página).
