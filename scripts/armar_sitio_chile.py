@@ -104,6 +104,8 @@ CIERRE = (f'<section id="contacto" class="s-closing"><div class="wrap"><h2>Cuén
 # el título de la sección queda bajo la cabecera fija y no pegado a ella.
 AJUSTES = ('<style>html body.country-site[data-oficina] #contenido details.ux-answer>summary h3{padding-left:0!important}'
            'html body.country-site[data-oficina] #contenido .pest-copy{scroll-margin-top:128px}'
+           # (4) legales en párrafos: una columna de lectura de unos 70 caracteres reales (660 px; 70ch daba ~90), como una página legal de globaltni.
+           'html body.country-site[data-oficina] #contenido .s-legal p{max-width:660px}'
            # (3) en la portada, los saltos a cobertura, consulta y preguntas también dejan aire bajo la cabecera.
            'html body.country-site[data-oficina] #contenido :is(#cobertura,#consulta){display:block}'
            'html body.country-site[data-oficina] #contenido :is(#cobertura,#consulta,#preguntas){scroll-margin-top:128px}</style>')
@@ -297,7 +299,8 @@ NOMBRES_LEGALES = {'privacidad': 'Privacidad', 'terminos': 'Términos de uso', '
 for slug, nombre in NOMBRES_LEGALES.items():
     t = comun(leer(slug))
     contenido = (f'<section class="wrap s-intro"><nav aria-label="Ruta"><a href="{CL}">Inicio</a><span aria-hidden="true">/</span>{e(nombre)}</nav><h1>{e(nombre)}</h1></section>'
-                 f'<section class="wrap s-section s-prose"><p>{e(ficha["legales"][slug])}</p></section>' + CIERRE)
+                 '<section class="wrap s-section s-prose s-legal">' + ''.join(f'<p>{e(p).replace(TEL, TEL.replace(" ", "\u00a0"))}</p>' for p in ficha['legales'][slug].split('\n\n'))
+                 + '</section>' + CIERRE)  # en los legales el teléfono va con espacios que no se parten
     guardar(slug, cabeza(main(t, contenido), f'{slug}/', f'{nombre} · Truly Nolen Chile', ficha['seo']['descripciones'][f'{slug}/']))
 
 

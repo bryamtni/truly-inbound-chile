@@ -1,6 +1,5 @@
 {
   "_borrador": "Ficha de Chile (Anexo C), 2026-11-04. Sin repo: no se corrió el generador ni los candados. Lo que es null falta y NO se inventa; ver ficha-chile-notas.md. Las llaves que empiezan con _ no van al archivo final.",
-
   "id": "chile",
   "base": "chile",
   "country": "Chile",
@@ -8,14 +7,27 @@
   "title": "Chile",
   "landmark": null,
   "localArea": null,
-
   "contacto": null,
   "chatIdioma": "Chilean Spanish, warm and professional, always usted, never tú or voseo",
   "tratoVetado": [
-    "tú", "Tú", "tu", "Tu", "tus", "Tus", "te", "Te",
-    "puedes", "necesitas", "quieres",
-    "podís", "tenís", "querís",
-    "vosotros", "vuestro", "vuestra", "os"
+    "tú",
+    "Tú",
+    "tu",
+    "Tu",
+    "tus",
+    "Tus",
+    "te",
+    "Te",
+    "puedes",
+    "necesitas",
+    "quieres",
+    "podís",
+    "tenís",
+    "querís",
+    "vosotros",
+    "vuestro",
+    "vuestra",
+    "os"
   ],
   "textos": {
     "Un programa para tu espacio.": "Un programa para su espacio.",
@@ -31,7 +43,6 @@
   "intro": null,
   "chapter": null,
   "focus": null,
-
   "oficina": {
     "whatsapp": null,
     "telefono": "+56 22 784 4400",
@@ -40,31 +51,37 @@
     "horario": null
   },
   "legales": {
-    "_borrador": "legales-borrador.md (2026-11-05). La oficina los aprueba antes de publicar; falta su razón social y RUT para «terminos».",
-    "privacidad": "Truly Nolen Chile usa los datos que usted comparte en este sitio o en la conversación con Truly AI solo para responder su consulta y coordinar la visita. Para preguntar por sus datos o pedir que se eliminen, llame al +56 22 784 4400.",
-    "terminos": "Truly Nolen Chile tiene su casa matriz en Avenida Presidente Kennedy 8028, Vitacura, Santiago. La información de este sitio es general: los servicios, la cobertura de cada sucursal, los precios y las condiciones se confirman directamente con Truly Nolen Chile antes de cada servicio.",
-    "accesibilidad": "Este sitio se puede recorrer con el teclado, con un lector de pantalla y desde el celular. Si algo no le funciona, llame al +56 22 784 4400 o cuénteselo a Truly AI en el chat."
+    "_borrador": "legales-borrador.md (5-nov-2026, en párrafos como Francia: \\n\\n separa párrafos). Solo datos verificados; lo que falta está en legalesPendientes y se pide a la oficina (preguntas 24 y 25).",
+    "privacidad": "Truly Nolen Chile, con casa matriz en Avenida Presidente Kennedy 8028, Vitacura, Santiago, es responsable de los datos que usted comparte en este sitio.\n\nUsamos esos datos solo para responder su consulta y coordinar la visita.\n\nEl chat lo atiende Truly AI, el asistente de Truly Nolen International: lo que usted escribe ahí lo recibe y lo responde ese asistente. Con cada mensaje, el chat envía también un identificador de la conversación, la página desde la que escribe y, si la dirección los trae, sus parámetros de campaña. Úselo para su consulta sobre control de plagas y no comparta datos sensibles, como claves, datos bancarios o información médica.\n\nEste sitio no usa herramientas de medición de visitas. El chat guarda la conversación en su navegador mientras dure la sesión, para que pueda seguirla al cambiar de página.\n\nPara preguntar por sus datos o pedir que se eliminen, llame al +56 22 784 4400.",
+    "terminos": "Truly Nolen Chile tiene su casa matriz en Avenida Presidente Kennedy 8028, Vitacura, Santiago. Teléfono: +56 22 784 4400.\n\nLa información de este sitio es general: los servicios, la cobertura de cada sucursal, los precios y las condiciones se confirman directamente con Truly Nolen Chile antes de cada servicio.\n\nCada sucursal opera con su propia resolución sanitaria. Las publicamos, con su número y fecha, en la sección de cobertura de la portada.\n\nLas guías de plagas resumen fuentes públicas, que se enlazan al pie de cada página. No reemplazan las indicaciones de la autoridad sanitaria ni la atención médica.",
+    "accesibilidad": "Este sitio está pensado para recorrerse con el teclado y con lectores de pantalla, y se puede usar desde el celular. Al comienzo de cada página hay un enlace para saltar directo al contenido.\n\nSi su dispositivo pide reducir el movimiento, el sitio no reproduce el video de la portada.\n\nSi algo no le funciona, llame al +56 22 784 4400 o cuénteselo a Truly AI en el chat."
   },
   "seo": {
     "descripciones": {
       "privacidad/": "Cómo trata Truly Nolen Chile los datos que usted comparte en este sitio y con Truly AI.",
       "terminos/": "Condiciones de uso del sitio de Truly Nolen Chile.",
-      "accesibilidad/": "Cómo el sitio de Truly Nolen Chile se puede usar con el teclado, con un lector de pantalla y desde el celular."
+      "accesibilidad/": "Cómo está pensado el sitio de Truly Nolen Chile para el teclado, los lectores de pantalla y el celular."
     }
   },
-
   "pelicula": null,
   "footer": null,
   "fotoNosotros": null,
   "fotoCasa": null,
   "fotoOperacion": null,
-  "fotosServicios": [null, null, null],
+  "fotosServicios": [
+    null,
+    null,
+    null
+  ],
   "origenFotos": null,
   "altFotos": null,
   "casaZonas": null,
-
   "paginas": {
-    "servicios": ["hogares", "comercios", "industria"],
+    "servicios": [
+      "hogares",
+      "comercios",
+      "industria"
+    ],
     "plagas": [
       "raton-colilargo",
       "arana-de-rincon",
@@ -75,7 +92,32 @@
     ],
     "_contenido": "borrador-paginas/servicio-*.json y borrador-paginas/plaga-*.json (auditados el 2026-11-02; imagen pendiente)"
   },
-
-  "blog": { "porDia": 2 },
-  "ruta": { "aprobado": { "portada": null, "carro": null, "revision": null } }
+  "blog": {
+    "porDia": 2
+  },
+  "ruta": {
+    "aprobado": {
+      "portada": null,
+      "carro": null,
+      "revision": null
+    }
+  },
+  "legalesFuentes": {
+    "casa matriz y teléfono": "trulynolen.cl/sucursales-trulynolen-chile/ y página de contacto, leídas el 2 y el 5 de noviembre de 2026",
+    "resoluciones sanitarias": "trulynolen.cl/sucursales-trulynolen-chile/, leída el 5-nov-2026 (docs/design/oficinas/chile/sucursales.json)",
+    "sin medición de visitas": "código del sitio: sin scripts de medición; la política de seguridad (connect-src) solo permite el hub del chat",
+    "conversación en el navegador": "código del sitio: landing/chat.js guarda en sessionStorage",
+    "movimiento reducido": "código del sitio: escenas.js y preview.js no reproducen el video con prefers-reduced-motion",
+    "saltar al contenido": "cada página empieza con el enlace «Saltar al contenido» (#contenido)",
+    "chat (Truly AI, qué envía)": "código del sitio: landing/chat.js envía al hub platform-web-chat de Truly Nolen International el mensaje, session_id, page_context (contexto declarado de la página y su ruta) y los parámetros utm_* de la dirección"
+  },
+  "legalesPendientes": [
+    "Razón social y RUT de Truly Nolen Chile (para «Términos» y como responsable en «Privacidad»). Pregunta 24.",
+    "Un correo para consultas sobre datos personales, además del teléfono (pregunta 1).",
+    "Dónde se guardan y procesan los mensajes del chat, y por cuánto tiempo (lo define el hub de Truly AI; no lo sabemos).",
+    "Si harán campañas con enlaces con parámetros de campaña (utm): el chat los envía, y «Privacidad» ya lo dice.",
+    "Si el sitio nuevo usará medición de visitas o correos con recomendaciones, como dice la política actual: hoy no los usa.",
+    "Revisión de «Privacidad» por su asesor ante la Ley 21.719 (vigencia 1-dic-2026, salvo postergación).",
+    "Aprobación de los tres textos (pregunta 25)."
+  ]
 }
