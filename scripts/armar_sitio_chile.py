@@ -71,6 +71,10 @@ for x in ['landing', 'machotes', 'oficinas/assets', 'tn-emblema.png']:
 for p in OUT.rglob('.DS_Store'): p.unlink()
 CHILE = OUT / 'oficinas/chile'
 (CHILE / 'assets').mkdir(parents=True)
+# Diagrama de las tres zonas dibujado para Chile (scripts/dibujar_zonas_chile.py): reemplaza zonas-truly-oficial.jpg,
+# porque en las oficinas no va ninguna imagen de Truly ni de globaltni (regla de Roger, 6-nov-2026).
+shutil.copy2(DOCS / 'zonas-chile.svg', CHILE / 'assets/zonas-chile.svg')
+(OUT / 'oficinas/assets/zonas-truly-oficial.jpg').unlink()
 
 # Portada provisional: un cuadro del video común del mundo (sin país). Se cambia por el carro de Chile en el paso 5.
 ffmpeg = subprocess.run([str(Path.home() / '.local/bin/uv'), 'run', '-q', '--python', '3.12', '--no-project', '--with', 'imageio-ffmpeg',
@@ -87,11 +91,18 @@ subprocess.run([ffmpeg, '-loglevel', 'error', '-y', '-i', mundo, '-frames:v', '1
 def leer(rel): return (BASE / 'oficinas/venezuela' / rel / 'index.html').read_text(encoding='utf-8')
 
 
+# Bajada de cada plaga en el menú (la base repetía «Información e identificación de la plaga.» en las seis). Cada una
+# resume lo que trae su guía, sin datos que la guía no tenga.
+BAJADAS = {'raton-colilargo': 'Hantavirus y lo que recomienda el MINSAL.', 'arana-de-rincon': 'Qué indica la guía del MINSAL de 2016.',
+           'termita-subterranea': 'Dónde se ha detectado en Chile.', 'cucaracha-alemana': 'Registros en Chile y control de rastreros.',
+           'zancudo': 'Aedes aegypti y lo que informa el MINSAL.', 'paloma': 'Truly Pigeons Away y la autorización del SAG.'}
+
+
 def enlaces_plagas(m):
     """Las listas de plagas del menú y del pie, con las de Chile y en el mismo formato que traían."""
     bloque = m.group(0)
     if '<strong>' in bloque:
-        return ''.join(f'<a href="{CL}plagas/{p["slug"]}/"><strong>{e(p["nombre"])}</strong><span>Información e identificación de la plaga.</span></a>' for p in PLAGAS)
+        return ''.join(f'<a href="{CL}plagas/{p["slug"]}/"><strong>{e(p["nombre"])}</strong><span>{BAJADAS[p["slug"]]}</span></a>' for p in PLAGAS)
     return ''.join(f'<a href="{CL}plagas/{p["slug"]}/">{e(p["nombre"])}</a>' for p in PLAGAS)
 
 
@@ -119,11 +130,59 @@ AJUSTES = ('<style>html body.country-site[data-oficina] #contenido details.ux-an
            'html body.country-site[data-oficina] #contenido .s-legal p{max-width:660px}'
            # (3) en la portada, los saltos a cobertura, consulta y preguntas también dejan aire bajo la cabecera.
            'html body.country-site[data-oficina] #contenido :is(#cobertura,#consulta){display:block}'
-           'html body.country-site[data-oficina] #contenido :is(#cobertura,#consulta,#preguntas){scroll-margin-top:128px}</style>')
+           'html body.country-site[data-oficina] #contenido :is(#cobertura,#consulta,#preguntas){scroll-margin-top:128px}'
+           # (5) en celular, el botón del chat en reposo (88×89 px) tapaba al abrir la página las pestañas «Cucaracha alemana» y
+           # «Paloma» de las guías: se achica al 82 % desde la esquina, misma forma, y sigue sobre los 44 px para tocarlo.
+           '@media(max-width:760px){html body.country-site[data-oficina] .machote-chat-host .tia:not(.tia--on) .tia-fab'
+           '{transform:scale(.82);transform-origin:100% 100%}}'
+           # (6) lo de adentro de «Formación, supervisión y respuesta» (TEPS) no ocupa lugar mientras está cerrado: Chrome le
+           # dejaba caja y el gate-replica lo daba como tapado por el chat sin que se viera.
+           'html body.country-site[data-oficina] .teps details.program-overview:not([open])>.program{display:none}'
+           # (7) el punto de «Áreas verdes» va verde como el césped del diagrama de Chile (la base lo dejaba gris).
+           'html body.country-site[data-oficina][data-machote] .g-zonas-lista li.g-z-verde::before{background:#3f9b4a!important}'
+           # (8) migas de los artículos del blog como las de los servicios: centradas con las «/» y sin negrita
+           # (en celular los enlaces de 44 px de alto quedaban desfasados de las barras).
+           'html body.country-site[data-oficina] .s-intro nav[aria-label="Ruta"]{align-items:center}'
+           'html body.country-site[data-oficina] .s-intro nav[aria-label="Ruta"] a{font-weight:400!important;align-items:center}'
+           # (9) en computadora, el «+»/«–» de «En esta página» de las guías queda fuera del botón del chat al abrir la página
+           # (en 1440×900 el chat caía justo encima).
+           '@media(min-width:761px){html body.country-site[data-oficina] .pest-index>summary{padding-right:96px!important}}'
+           # (10) foto de los artículos del blog: alineada con el título y a su tamaño (hasta 640 px), no una miniatura centrada.
+           'html body.country-site[data-oficina] .s-intro>.s-figure{margin-left:0!important;margin-right:auto!important;width:auto!important;max-width:640px!important}'
+           'html body.country-site[data-oficina] .s-intro>.s-figure img{width:auto!important;max-width:100%!important;height:auto!important}'
+           # (11) «¿Quién se beneficia?» de Comercios en una columna en celular: en dos se cortaban palabras («Supermercado/s»).
+           '@media(max-width:480px){html body.country-site[data-oficina] .ct-facilities ul{grid-template-columns:1fr!important}}'
+           # (12) en celular, con la página arriba del todo, el chat espera (arriba está «Conversemos» del hero): al abrir una guía
+           # caía sobre las pestañas de plagas o sobre «En esta página». Aparece al bajar 160 px (CHAT_ARRIBA).
+           'html body.country-site[data-oficina] .machote-chat-host .tia-fab{transition:opacity .2s}'
+           'html.chat-arriba body.country-site[data-oficina] .machote-chat-host .tia:not(.tia--on) .tia-fab{opacity:0;pointer-events:none}'
+           # (13) en celular, las secciones que terminan en un control pegado abajo dejan 88 px de aire: el chat ocupa los
+           # últimos ~75 px de la pantalla y, al final de la sección, tapaba el «+» del índice del blog, la flecha de los videos
+           # de ayuda, el botón «Escribir en el chat» y la última fuente de la portada.
+           '@media(max-width:760px){html body.country-site[data-oficina] :is(.s-index,.g-ayuda,.contact-band,#fuentes-corporativas)'
+           '{padding-bottom:88px!important}}'
+           # (14) el índice «En este artículo» del blog lleva «+»/«−» como las preguntas (no se notaba que se abre).
+           'html body.country-site[data-oficina] .s-index details>summary{justify-content:space-between;gap:24px;list-style:none}'
+           'html body.country-site[data-oficina] .s-index details>summary::-webkit-details-marker{display:none}'
+           'html body.country-site[data-oficina] .s-index details>summary::after{content:"+";flex:0 0 auto;font-size:22px;font-weight:400;line-height:1}'
+           'html body.country-site[data-oficina] .s-index details[open]>summary::after{content:"−"}'
+           # (15) crédito de una foto CC BY en su propia línea bajo el pie.
+           'html body.country-site[data-oficina] .s-credito{display:block;margin-top:6px;font-style:normal;font-size:13px}'
+           'html body.country-site[data-oficina] .s-credito a{color:inherit}</style>')
+# Archivo aparte: la CSP del sitio (script-src 'self') bloquea los scripts en línea.
+CHAT_ARRIBA_JS = ('(()=>{const m=matchMedia("(max-width:760px)"),f=()=>document.documentElement.classList.toggle("chat-arriba",'
+                  'm.matches&&scrollY<160);addEventListener("scroll",f,{passive:true});m.addEventListener("change",f);f()})()\n')
+CHAT_ARRIBA = f'<script src="{CL}assets/chat-arriba.js"></script>'
+(CHILE / 'assets/chat-arriba.js').write_text(CHAT_ARRIBA_JS, encoding='utf-8')
 
 
 def comun(t):
-    t = t.replace(VE, CL).replace('</head>', AJUSTES + '</head>', 1)
+    t = t.replace(VE, CL).replace('</head>', AJUSTES + '</head>', 1).replace('</body>', CHAT_ARRIBA + '</body>', 1)
+    # La marca en el sitio del país es Truly Nolen (la base decía «TNI» en Hogares y Comercios).
+    t = t.replace('posible, TNI ofrece', 'posible, Truly Nolen Chile ofrece').replace('Contactar a TNI', 'Contactar a Truly Nolen')
+    t = t.replace('archivo de servicios de TNI', 'archivo de servicios de Truly Nolen')
+    t = re.sub(r'<img(?=[^>]*zonas-truly-oficial\.jpg)[^>]*?(loading="\w+")[^>]*>', lambda m: f'<img src="{CL}assets/zonas-chile.svg" width="1019" height="680" '
+               'alt="Diagrama de las tres zonas: el jardín en verde, el borde de la casa en amarillo y el interior en rojo" ' + m.group(1) + '/>', t)
     # Plagas de Chile en el menú y en el pie (grupos seguidos de enlaces a plagas de Venezuela).
     t = re.sub(r'(?:<a href="/oficinas/chile/plagas/[^"]+/"[^>]*>.*?</a>)+', enlaces_plagas, t, flags=re.S)
     # El enlace al blog solo mientras haya artículos publicados.
@@ -230,7 +289,8 @@ def fuentes(fs):
 # comun() va antes de poner el contenido: sus listas de plagas no deben tocar las del cuerpo.
 # En celular las 6 pestañas de Chile (nombres más largos que los de Venezuela) se partían en filas desparejas: dos columnas parejas.
 PESTANAS = ('<style>@media(max-width:760px){html body.country-site[data-oficina] .pest-families{display:grid!important;'
-            'grid-template-columns:1fr 1fr;gap:0 18px!important}html body.country-site[data-oficina] .pest-families a{padding:12px 0 11px}}</style>')
+            'grid-template-columns:1fr 1fr;gap:0 18px!important}html body.country-site[data-oficina] .pest-families a{padding:12px 0 11px;justify-self:start}}</style>')
+# (justify-self: cada pestaña mide lo que su texto, y el subrayado de la activa no llega hasta el botón del chat.)
 PLANTILLA_PLAGA = comun(leer('plagas/zancudos')).replace('</head>', PESTANAS + '</head>', 1)
 for i, p in enumerate(PLAGAS):
     secs, idx = [], []
@@ -445,7 +505,11 @@ if BLOG:
         if faqs: cuerpo += f'<h2 class="sin-num">Preguntas frecuentes</h2><div class="s-prose">{faqs}</div>'
         hay_foto = (DOCS / 'blog/fotos' / a['cover_url']).exists()
         if not hay_foto: print(f'  aviso: {a["slug"]} sin portada ({a["cover_url"]})')
-        fig = (f'<figure class="s-figure"><img src="{CL}assets/{a["cover_url"]}" alt="{e(a["og_alt_text"])}"/><figcaption>{e(a["og_alt_text"])}</figcaption></figure>') if hay_foto else ''  # sin créditos visibles: la licencia va en portadaOrigen (receta, Anexo E)
+        cred = (f' <small class="s-credito"><a href="{a["credito"][1]}" rel="license noopener" target="_blank">{e(a["credito"][0])}</a></small>'
+                if a.get('credito') else '')
+        fig = (f'<figure class="s-figure"><img src="{CL}assets/{a["cover_url"]}" alt="{e(a["og_alt_text"])}"/><figcaption>{e(a["og_alt_text"])}{cred}</figcaption></figure>') if hay_foto else ''
+        # Sin créditos visibles (receta, Anexo E): la licencia va en portadaOrigen. Excepción: una foto CC BY lleva su crédito
+        # en el pie, porque la licencia lo exige (campo «credito»: [texto, enlace a la licencia]).
         minutos = max(1, math.ceil(len(a['content_md'].split()) / 200))
         otros = [b for b in BLOG if b is not a]
         sig = (f'<section class="wrap closeout-blog-next"><div><p class="closeout-blog-eyebrow">Seguir leyendo</p><h2>{e(otros[0]["title"])}</h2>'

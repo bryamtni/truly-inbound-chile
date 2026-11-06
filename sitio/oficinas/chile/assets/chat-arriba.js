@@ -1,0 +1,1 @@
+(()=>{const m=matchMedia("(max-width:760px)"),f=()=>document.documentElement.classList.toggle("chat-arriba",m.matches&&scrollY<160);addEventListener("scroll",f,{passive:true});m.addEventListener("change",f);f()})()

@@ -63,3 +63,10 @@ Portada alternativa: ninguna en dominio público o CC0 en la carpeta de fotos (s
 | Grafía Kalotermitidae | K2008, bibliografía (Woodrow y Grace 1988, «Isoptera: Rhinotermitidae, Kalotermitidae»); Wikipedia «Kalotermitidae Froggatt, 1897» | El cuerpo de K2008 escribe «Kalotermidae» (errata); el artículo parafrasea, no cita |
 | «Región de Valparaíso» por «Quinta Región» | https://www.bcn.cl/siit/nuestropais/region5 | «La Región de Valparaíso (V)» |
 | FAQ 3: «a la fecha, se afirmaba que se trataría» | K2008 p.100 | «actualmente se afirma que se trataría de la especie Reticulitermes flavipes» |
+
+## Agregadas en la revisión final post-SEO oficial (6-nov-2026)
+- Autores de K2008 (p. 99 del PDF de redalyc 48510203): cinco figuran como «Académico(s)» de la Universidad de Chile o de la
+  Universidad de Santiago de Chile; B. Tejer figura como «Memorante Departamento de Ingeniería de la Madera … Universidad de Chile».
+  Por eso el texto dice «de la Universidad de Chile y de la Universidad de Santiago de Chile», sin «académicos».
+- FAQ 5 (fila 17, K2008 p. 101): la cita sigue hasta «a través de la implementación de estrategias integradas de manejo de la
+  plaga». El cierre de la FAQ (planes preventivos y curativos, casa matriz) sale de TN-SERV (fila 21) y de la ficha.

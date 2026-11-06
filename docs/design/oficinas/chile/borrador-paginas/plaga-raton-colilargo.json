@@ -1,6 +1,6 @@
 {
   "titulo": "Ratón colilargo: control de roedores en Chile",
-  "intro": "El MINSAL declaró alerta sanitaria por hantavirus desde Atacama hasta Magallanes, vigente hasta el 31 de julio de 2027. El virus lo transmite el ratón de cola larga, que vive en zonas rurales y semirurales de casi todo el país.",
+  "intro": "El MINSAL declaró alerta sanitaria por hantavirus desde Atacama hasta Magallanes, vigente hasta el 31 de julio de 2027. El virus lo transmite el ratón de cola larga.",
   "bloques": [
     {
       "tipo": "tarjetas",
@@ -11,7 +11,7 @@
         },
         {
           "titulo": "Dónde está en Chile",
-          "texto": "Según el MINSAL, vive en zonas rurales y semirurales de casi todo el país y está presente todo el año. En 2026, según la nota del 28 de julio, los casos ocurrieron en las regiones de Valparaíso, Metropolitana, O'Higgins, Maule, Ñuble, Biobío, La Araucanía, Los Ríos, Los Lagos y Aysén."
+          "texto": "Según el MINSAL, vive en zonas rurales y semirrurales de casi todo el país y está presente todo el año. En 2026, según la nota del 28 de julio, los casos ocurrieron en las regiones de Valparaíso, Metropolitana, O'Higgins, Maule, Ñuble, Biobío, La Araucanía, Los Ríos, Los Lagos y Aysén."
         },
         {
           "titulo": "Qué riesgo implica",
@@ -97,7 +97,7 @@
   "preguntas": [
     [
       "¿El ratón colilargo está solo en el campo?",
-      "El MINSAL señala que vive en zonas rurales y semirurales de casi todo el país. Si usted estuvo en una zona rural o semirural donde pudo haber ratones y presenta fiebre, dolor muscular intenso o dificultad respiratoria, el MINSAL indica acudir de inmediato a un centro de salud e informar al personal médico."
+      "El MINSAL señala que vive en zonas rurales y semirrurales de casi todo el país. Si usted estuvo en una zona rural o semirrural donde pudo haber ratones y presenta fiebre, dolor muscular intenso o dificultad respiratoria, el MINSAL indica acudir de inmediato a un centro de salud e informar al personal médico."
     ],
     [
       "¿Solo hay riesgo en verano?",
@@ -105,7 +105,7 @@
     ],
     [
       "¿Qué control de roedores ofrecemos?",
-      "Controlamos roedores con cebos rodenticidas. Para conocer el servicio en su recinto, llame a nuestra Casa Matriz al +56 22 784 4400."
+      "Usamos cebos rodenticidas. Para conocer el servicio en su recinto, llame al +56 22 784 4400, la central de la Casa Matriz."
     ],
     [
       "¿Una empresa de plagas debe estar autorizada?",

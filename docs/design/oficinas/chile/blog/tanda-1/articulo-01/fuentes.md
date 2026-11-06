@@ -49,8 +49,11 @@ Lo que no es un hecho, y por eso no lleva fuente: la frase de apertura («Quien 
 
 ## Portada
 
-- `cover_url`: `cl-blog-hantavirus-raton-colilargo.webp`, como pidió el encargo. La foto no está elegida y el archivo no existe en `blog/fotos/`, así que no la abrí ni corrí el veto. `og_alt_text` queda «Ratón colilargo».
-- Alternativa: la lámina en dominio público del Beagle ([File:O longiaudatus edit.jpg](https://commons.wikimedia.org/wiki/File:O_longiaudatus_edit.jpg)), opción (a) de `blog/fotos-revision.md`. Es una ilustración, no una foto. La otra opción es la foto del MINSAL en CC BY 3.0 Chile, que exige cambiar la regla de licencias. No abrí ninguna de las dos.
+- `cover_url`: `cl-blog-hantavirus-raton-colilargo.webp` (579×590, webp calidad 82, sin agrandar; sha1 del PNG original igual al de Commons).
+- Origen: [File:Raton-colilargo-frente.png](https://commons.wikimedia.org/wiki/File:Raton-colilargo-frente.png), Wikimedia Commons. Autor: Ministerio de Salud de Chile (fuente: saludresponde.minsal.cl/hanta/). Licencia CC BY 3.0 Chile.
+- Crédito: «Ministerio de Salud de Chile, CC BY 3.0 CL». Decisión de Roger del 6-nov-2026: esta foto como portada, con el crédito anotado en la ficha (`portadaOrigen`).
+- Especie: la ficha de Commons dice «ratón silvestre de "cola larga" (*Oligoryzomys longicaudatus*)». Revisada a tamaño real: sin marcas de agua, sin texto, sin otra marca.
+- `og_alt_text`: «Ratón colilargo de pelaje café grisáceo, visto de frente, sobre tierra con pasto».
 
 ## Dudas para el auditor
 

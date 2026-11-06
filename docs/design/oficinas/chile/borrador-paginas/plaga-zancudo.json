@@ -11,11 +11,11 @@
         },
         {
           "titulo": "Hallazgos en Chile",
-          "texto": "En Isla de Pascua, MINSAL informó el 20 de noviembre de 2019 un caso importado de dengue DEN-2 (contraído en Tahití), el primero de ese serotipo en la isla; en esa fecha ya se habían notificado 34 casos DEN-1 y regía una alerta sanitaria decretada en mayo. En el continente, MINSAL informó en abril de 2016 el hallazgo en Arica y, en enero de 2026, que el vector tiene presencia en Arica y Parinacota, Tarapacá y Valparaíso, y que se confirmó en la Región Metropolitana con un ejemplar hallado en las bodegas del aeropuerto de Santiago."
+          "texto": "MINSAL ha comunicado el hallazgo del mosquito en Arica en 2016 y en el aeropuerto de Santiago en 2026, y un caso importado de dengue en Isla de Pascua en 2019."
         },
         {
           "titulo": "Qué informó MINSAL",
-          "texto": "MINSAL informó el 29 de enero de 2026 que hasta esa fecha no había casos autóctonos de arbovirosis en Chile continental. En 2016 recomendó a la población de Arica, entre otras medidas, tapar estanques y tambores con agua."
+          "texto": "MINSAL informó que hasta el 29 de enero de 2026 no había casos de contagio local de arbovirosis en el continente. En 2016 recomendó a la población de Arica, entre otras medidas, tapar estanques y tambores con agua."
         },
         {
           "titulo": "Qué hacemos",
@@ -27,7 +27,7 @@
       "tipo": "cifras",
       "items": [
         {
-          "dato": "Primer caso importado de dengue DEN-2 en Isla de Pascua, confirmado por el ISP; en esa fecha, 34 casos DEN-1 en la isla y alerta sanitaria decretada en mayo; control del vector en todas las viviendas del área de riesgo",
+          "dato": "Primer caso importado de dengue DEN-2 en Isla de Pascua, confirmado por el ISP",
           "anio": "2019 (20 de noviembre)",
           "fuente": "MINSAL, nota «ISP confirma caso de dengue en Isla de Pascua»"
         },
@@ -66,7 +66,7 @@
     },
     {
       "pregunta": "¿Qué ocurrió en Isla de Pascua?",
-      "respuesta": "El 20 de noviembre de 2019, el ISP confirmó un caso importado de dengue DEN-2, contraído en Tahití, el primero de ese serotipo en la isla. MINSAL informó además que ya se habían notificado 34 casos DEN-1 y que regía una alerta sanitaria decretada en mayo y se hacía control del vector en todas las viviendas del área de riesgo."
+      "respuesta": "El 20 de noviembre de 2019, el ISP confirmó en la isla un caso importado de dengue DEN-2, el primero de ese serotipo allí. MINSAL informó que se hacía control del vector en todas las viviendas del área de riesgo."
     },
     {
       "pregunta": "¿Atienden zancudos?",

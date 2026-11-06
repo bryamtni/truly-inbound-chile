@@ -43,3 +43,9 @@ Opciones para el 01:
 - **(a)** La lámina del Beagle, de dominio público. Es la especie correcta, pero es ilustración.
 - **(b)** La foto del MINSAL, CC BY 3.0 Chile. Haría falta cambiar la regla para aceptar CC BY con su crédito visible.
 - **(c)** Esperar una foto de la oficina (pregunta 23 a la oficina).
+
+## Actualización 6-nov-2026 · portada del 01 resuelta
+Roger eligió la opción (b): [Raton-colilargo-frente.png](https://commons.wikimedia.org/wiki/File:Raton-colilargo-frente.png)
+(Ministerio de Salud de Chile, CC BY 3.0 Chile) como portada del 01, con el crédito «Ministerio de Salud de Chile, CC BY 3.0
+CL» anotado en la ficha (`portadaOrigen`). Para Chile es la fuente más creíble. Archivo: `fotos/cl-blog-hantavirus-raton-colilargo.webp`
+(579×590, calidad 82, sin agrandar). La regla de la decisión 31 queda con esta excepción (CC BY con crédito en la ficha).

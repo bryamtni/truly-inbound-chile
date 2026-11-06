@@ -1,6 +1,6 @@
 {
   "titulo": "Araña de rincón en Chile (género Loxosceles)",
-  "intro": "La guía del MINSAL de 2016 describe la araña de rincón, o araña de los rincones, como Loxosceles laeta, de color café parduzco y cerca de 1 centímetro de largo. La propia guía advierte que desde 2004 hay dudas sobre si L. laeta es la única causante de los cuadros clínicos en Chile y recomienda atribuirlos al género Loxosceles mientras no se determinen las especies.",
+  "intro": "La guía del MINSAL de 2016 describe la araña de rincón, o araña de los rincones, como Loxosceles laeta, de color café parduzco y cerca de 1 centímetro de largo.",
   "bloques": [
     {
       "tipo": "tarjetas",
@@ -79,7 +79,7 @@
     ],
     [
       "¿Qué corresponde hacer si una araña muerde a una persona?",
-      "La guía del MINSAL indica lavar con agua y jabón y dejar en reposo el miembro afectado, conservar la araña (viva en un recipiente con tapa o muerta en uno seco, sin aplastarla) y permanecer tranquilo e ir al Servicio de Urgencia más cercano."
+      "La guía del MINSAL indica lavar la herida, dejar en reposo el miembro afectado, conservar la araña sin aplastarla e ir al Servicio de Urgencia más cercano."
     ],
     [
       "¿Dónde se esconde dentro de la casa?",

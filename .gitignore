@@ -23,3 +23,9 @@ Roger/
 
 # Decisiones internas: solo local, nunca a GitHub
 docs/design/oficinas/chile/decisiones.md
+# Lo que se le pide a Roger cada día (para-roger-AAAA-MM-DD.md): solo local
+docs/design/oficinas/chile/para-roger-*.md
+# Lista de desvíos del gate para revisar con Roger (desvios-gate-AAAA-MM-DD.md): solo local
+docs/design/oficinas/chile/desvios-gate-*.md
+# Hojas de contacto de fotos de Commons (algunas CC BY): solo para revisar en local
+docs/design/oficinas/chile/fotos-plagas/*.jpg
