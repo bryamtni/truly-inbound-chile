@@ -5,7 +5,7 @@
   "country": "Chile",
   "language": "es",
   "title": "Chile",
-  "landmark": null,
+  "landmark": "Volcán Licancabur, San Pedro de Atacama",
   "localArea": null,
   "contacto": null,
   "chatIdioma": "Chilean Spanish, warm and professional, always usted, never tú or voseo",
@@ -97,7 +97,7 @@
   },
   "ruta": {
     "aprobado": {
-      "portada": null,
+      "portada": "2026-11-06",
       "carro": null,
       "revision": null
     }
