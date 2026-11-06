@@ -16,3 +16,10 @@
 
 # Material que manda Roger (paquetes y recetas): solo local, se borra al terminar
 Roger/
+
+# Excepción (5-nov-2026, pedido del dueño): los dos videos comunes del mundo que usa el sitio publicado
+!sitio/oficinas/assets/mundo-desktop.mp4
+!sitio/oficinas/assets/mundo-movil.mp4
+
+# Decisiones internas: solo local, nunca a GitHub
+docs/design/oficinas/chile/decisiones.md
