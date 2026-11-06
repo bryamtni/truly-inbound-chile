@@ -6,9 +6,12 @@
 # Uso (desde la raíz del repo):
 #   python3 -I scripts/armar_sitio_chile.py
 #
-# Mientras no haya foto ni carro de Chile, la portada usa el video común del mundo; las plagas van sin foto; el blog
-# queda fuera; el contacto es la central de la casa matriz (WhatsApp, correo y horario no los publica la oficina).
-import html, json, re, shutil, subprocess, sys
+# Mientras no haya foto ni carro de Chile, la portada usa el video común del mundo; las plagas van sin foto; el contacto
+# es la central de la casa matriz (WhatsApp, correo y horario no los publica la oficina). El blog sale de
+# docs/design/oficinas/chile/blog/publicados/<slug>.json (método blog-verificado) y se publica en goteo: solo lo que
+# tiene fecha de hoy o anterior, hora de Santiago (FECHA_HOY=AAAA-MM-DD para probar otra fecha).
+import datetime, html, json, math, os, re, shutil, subprocess, sys
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
@@ -41,6 +44,14 @@ for slug in ficha['paginas']['plagas']:
 SERVICIOS = {s: json.loads((DOCS / f'borrador-paginas/servicio-{s}.json').read_text(encoding='utf-8'))
              for s in ficha['paginas']['servicios']}
 NOMBRE_SERV = {'hogares': 'Hogares', 'comercios': 'Comercios', 'industria': 'Industria'}
+
+# Blog: goteo por fecha, el más nuevo primero.
+HOY = os.environ.get('FECHA_HOY') or datetime.datetime.now(ZoneInfo('America/Santiago')).date().isoformat()
+BLOG = sorted((json.loads(p.read_text(encoding='utf-8')) for p in (DOCS / 'blog/publicados').glob('*.json')),
+              key=lambda a: (a['fecha'], a['title']), reverse=True)
+BLOG = [a for a in BLOG if a['fecha'] <= HOY]
+MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+def fecha_larga(f): a, m, d = map(int, f.split('-')); return f'{d} de {MESES[m - 1]} de {a}'
 
 
 def descripcion(texto, n=158):
@@ -115,8 +126,8 @@ def comun(t):
     t = t.replace(VE, CL).replace('</head>', AJUSTES + '</head>', 1)
     # Plagas de Chile en el menú y en el pie (grupos seguidos de enlaces a plagas de Venezuela).
     t = re.sub(r'(?:<a href="/oficinas/chile/plagas/[^"]+/"[^>]*>.*?</a>)+', enlaces_plagas, t, flags=re.S)
-    # Sin blog por ahora.
-    t = re.sub(r'<a href="/oficinas/chile/blog/">Blog</a>', '', t)
+    # El enlace al blog solo mientras haya artículos publicados.
+    if not BLOG: t = re.sub(r'<a href="/oficinas/chile/blog/">Blog</a>', '', t)
     # Contacto: central de la casa matriz en vez del WhatsApp de Truly AI (Chile sí tiene oficina).
     t = re.sub(r'<a class="tia-wa" href="https://wa\.me/\d+"[^>]*>.*?</a>', f'<a class="tia-wa" href="{TEL_URL}">Llamar a Truly Nolen Chile</a>', t, flags=re.S)
     t = re.sub(r'<a class="text-link" href="https://wa\.me/\d+"[^>]*>Escribir por WhatsApp</a>', LLAMAR, t)
@@ -130,13 +141,14 @@ def comun(t):
     t = t.replace('<summary>Truly Nolen Venezuela</summary>', '<summary>Truly Nolen Chile</summary>')
     t = t.replace('© Truly Nolen · Venezuela', '© Truly Nolen · Chile')
     t = t.replace('Por ejemplo: comercios o alacranes', 'Por ejemplo: comercios o termitas')
-    t = t.replace('Busque servicios, plagas o artículos', 'Busque servicios o plagas')  # sin blog no hay artículos
+    if not BLOG: t = t.replace('Busque servicios, plagas o artículos', 'Busque servicios o plagas')  # sin blog no hay artículos
     t = re.sub(r'(<script type="application/json" id="gt-buscar-indice">).*?(</script>)', lambda m: m.group(1) + BUSCAR + m.group(2), t, flags=re.S)
     return t
 
 
 BUSCAR = json.dumps({'items': [[NOMBRE_SERV[s], SERVICIOS[s].get('resumen', ''), f'{CL}servicios/{s}/', 'Servicios'] for s in SERVICIOS]
                      + [[p['nombre'], p.get('avance') or _primera(p['intro']), f'{CL}plagas/{p["slug"]}/', 'Guía de plagas'] for p in PLAGAS]
+                     + [[a['title'], a['meta_description'], f'{CL}blog/{a["slug"]}/', 'Blog'] for a in BLOG]
                      + [[x, '', f'{CL}#{a}', 'Inicio'] for x, a in [('Sanitización', 'sanitizacion'), ('Sistema TEPS', 'teps'), ('Cobertura', 'cobertura'), ('Nosotros', 'nosotros'), ('Preguntas frecuentes', 'preguntas'), ('Contacto', 'contacto')]],
                      'textos': {'uno': '1 resultado', 'varios': '{n} resultados', 'cero': 'Sin resultados. Pruebe con otra palabra.'}}, ensure_ascii=False).replace('</', '<\\/')
 
@@ -356,10 +368,21 @@ tarjetas = ''.join(f'<article style="display:flex;flex-direction:column"><h3>{e(
 t = re.sub(r'<div class="g-plagas-grid" style="--n:6">.*?</div></section>', f'<div class="g-plagas-grid" style="--n:{len(PLAGAS)}">{tarjetas}</div></section>', t, count=1, flags=re.S)
 t = t.replace('Las que más vemos en Venezuela. Cada guía explica las señales y qué hacer, con fuentes.',
               'Seis plagas con presencia documentada en Chile. Cada guía explica qué dicen las fuentes del país y qué hacer.')
-# Sin blog: queda solo el bloque de preguntas.
-t = re.sub(r'<article class="g-blog">.*?</article>', '', t, count=1, flags=re.S)
-t = re.sub(r'(<section class="section g g-ayuda">)(<header class="g-cab">.*?</header>)(<div class="g-ayuda-grid">)', r'\1\3\2', t, count=1, flags=re.S)
-t = t.replace('<p class="g-intro">Consejos para prevenir plagas y cómo trabajamos.</p>', '<p class="g-intro">Cómo empieza el servicio y qué conviene preparar.</p>')
+if BLOG:
+    # El último artículo en el bloque de ayuda, como en Venezuela.
+    a = BLOG[0]
+    url = f'{CL}blog/{a["slug"]}/'
+    img = f'<img src="{CL}assets/{a["cover_url"]}" alt="" loading="lazy"/>' if (DOCS / 'blog/fotos' / a['cover_url']).exists() else ''
+    tarjeta = (f'<article class="g-blog"><div class="g-blog-top">{img}<p class="g-ey">Del blog · {fecha_larga(a["fecha"])}</p></div>'
+               f'<h3><a href="{url}">{e(a["title"])}</a></h3><p>{e(a["excerpt"])}</p>'
+               f'<a class="g-link" href="{url}">Leer el artículo<span aria-hidden="true">→</span></a>'
+               f'<a class="g-link g-link-2" href="{CL}blog/">Ver todo el blog<span aria-hidden="true">→</span></a></article>')
+    t = re.sub(r'<article class="g-blog">.*?</article>', lambda _: tarjeta, t, count=1, flags=re.S)
+else:
+    # Sin blog: queda solo el bloque de preguntas.
+    t = re.sub(r'<article class="g-blog">.*?</article>', '', t, count=1, flags=re.S)
+    t = re.sub(r'(<section class="section g g-ayuda">)(<header class="g-cab">.*?</header>)(<div class="g-ayuda-grid">)', r'\1\3\2', t, count=1, flags=re.S)
+    t = t.replace('<p class="g-intro">Consejos para prevenir plagas y cómo trabajamos.</p>', '<p class="g-intro">Cómo empieza el servicio y qué conviene preparar.</p>')
 t = t.replace('Indique su estado, municipio y el tipo de espacio.', 'Indique su región, su comuna y el tipo de espacio.')
 t = t.replace('<div class="contact-actions"><a class="button button-dark" href="#contacto" data-abrir-chat>Escribir en el chat</a>',
               f'<div class="contact-actions"><a class="button button-dark" href="#contacto" data-abrir-chat>Escribir en el chat</a>')
@@ -373,6 +396,92 @@ t = re.sub(r'(<div class="contact-intro"><h2 id="contact-title">.*?</h2><p>.*?</
 t = cabeza(comun(t), '', 'Truly Nolen Chile | Control de plagas',
            'Control de plagas en Chile para hogares, comercios e industrias. Escríbale a Truly AI o llame a la casa matriz en Vitacura.')
 guardar('', t)
+
+
+# ---------------------------------------------------------------- 7b. blog
+def md_a_html(md):
+    """Markdown de blog-verificado a HTML: se escapa todo y solo pasan ##/###, párrafos, listas, negrita, cursiva y enlaces."""
+    def linea(x):
+        x = e(x)
+        x = re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)', lambda m: f'<a href="{m.group(2)}">{m.group(1)}</a>', x)
+        x = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', x)
+        return re.sub(r'(?<![\w*])[*_](?!\s)(.+?)(?<!\s)[*_](?![\w*])', r'<em>\1</em>', x)
+    out, lista, n = [], None, 0
+    def cerrar():
+        nonlocal lista
+        if lista: out.append(f'</{lista}>'); lista = None
+    for bloque in re.split(r'\n\s*\n', md.strip()):
+        for l in bloque.split('\n'):
+            l = l.rstrip()
+            if not l: continue
+            if l.startswith('## '):
+                cerrar(); n += 1; out.append(f'<h2 id="art-{n}">{linea(l[3:])}</h2>')
+            elif l.startswith('### '):
+                cerrar(); out.append(f'<h3>{linea(l[4:])}</h3>')
+            elif re.match(r'[-*] ', l) or re.match(r'\d+\. ', l):
+                tipo = 'ol' if re.match(r'\d+\. ', l) else 'ul'
+                if lista != tipo: cerrar(); out.append(f'<{tipo}>'); lista = tipo
+                out.append(f'<li>{linea(re.sub(r"^([-*]|\d+\.) ", "", l))}</li>')
+            else:
+                cerrar(); out.append(f'<p>{linea(l)}</p>')
+        cerrar()
+    return ''.join(out)
+
+
+LD = re.compile(r'<script type="application/ld\+json">.*?</script>', re.S)
+def ld(*objs): return ''.join(f'<script type="application/ld+json">{json.dumps(o, ensure_ascii=False)}</script>' for o in objs)
+ORG = {'@context': 'https://schema.org', '@type': 'Organization', 'name': 'Truly Nolen Chile', 'url': f'{SITIO}{CL}',
+       'logo': f'{SITIO}/tn-emblema.png', 'telephone': TEL, 'areaServed': {'@type': 'Country', 'name': 'Chile'}}
+if BLOG:
+    for p in (DOCS / 'blog/fotos').glob('*'):
+        if any(a['cover_url'] == p.name for a in BLOG): shutil.copy2(p, CHILE / 'assets' / p.name)
+    PLANTILLA_ART = comun(leer('blog/como-eliminar-el-comejen'))
+    for i, a in enumerate(BLOG):
+        url = f'{CL}blog/{a["slug"]}/'
+        cuerpo = md_a_html(a['content_md'])
+        idx = ''.join(f'<li><a href="#art-{k}">{h}</a></li>' for k, h in enumerate(re.findall(r'<h2 id="art-\d+">(.*?)</h2>', cuerpo), 1))
+        faqs = ''.join(f'<details class="ux-answer"{" open" if k == 0 else ""}><summary><h3>{e(q["q"])}</h3></summary><article><p>{e(q["a"])}</p></article></details>'
+                       for k, q in enumerate(a['faqs']))
+        if faqs: cuerpo += f'<h2 class="sin-num">Preguntas frecuentes</h2><div class="s-prose">{faqs}</div>'
+        hay_foto = (DOCS / 'blog/fotos' / a['cover_url']).exists()
+        if not hay_foto: print(f'  aviso: {a["slug"]} sin portada ({a["cover_url"]})')
+        fig = (f'<figure class="s-figure"><img src="{CL}assets/{a["cover_url"]}" alt="{e(a["og_alt_text"])}"/><figcaption>{e(a["og_alt_text"])}</figcaption></figure>') if hay_foto else ''  # sin créditos visibles: la licencia va en portadaOrigen (receta, Anexo E)
+        minutos = max(1, math.ceil(len(a['content_md'].split()) / 200))
+        otros = [b for b in BLOG if b is not a]
+        sig = (f'<section class="wrap closeout-blog-next"><div><p class="closeout-blog-eyebrow">Seguir leyendo</p><h2>{e(otros[0]["title"])}</h2>'
+               f'<a class="text-link" href="{CL}blog/{otros[0]["slug"]}/">Leer el artículo →</a></div><a class="text-link" href="{CL}blog/">Ver todos los artículos →</a></section>') if otros else ''
+        contenido = (f'<section class="wrap s-intro"><nav aria-label="Ruta"><a href="{CL}">Inicio</a><span aria-hidden="true">/</span><a href="{CL}blog/">Blog</a><span aria-hidden="true">/</span>{e(a["tema"])}</nav><h1>{e(a["title"])}</h1>{fig}</section>'
+                     f'<section class="wrap s-section s-prose"><p class="s-note">Truly Nolen Chile · {fecha_larga(a["fecha"])} · {minutos} min de lectura</p><p class="s-entrada">{e(a["excerpt"])}</p></section>'
+                     f'<nav class="wrap s-index ux-index" aria-label="En este artículo"><details><summary>En este artículo</summary><ul>{idx}</ul></details></nav>'
+                     f'<section class="wrap s-section s-article"><div class="article-body">{cuerpo}</div></section>'
+                     + fuentes(a['fuentes']) + sig + CIERRE)
+        t = cabeza(LD.sub('', main(PLANTILLA_ART, contenido)), f'blog/{a["slug"]}/', f'{a["title"]} · Truly Nolen Chile', a['meta_description'])
+        if hay_foto:
+            t = re.sub(r'(<meta (?:property="og:image"|name="twitter:image") content=")[^"]*', lambda m: m.group(1) + f'{SITIO}{CL}assets/{a["cover_url"]}', t)
+            t = re.sub(r'(<meta property="og:image:alt" content=")[^"]*', lambda m: m.group(1) + e(a['og_alt_text']), t)
+            t = re.sub(r'<meta property="og:image:(?:width|height)" content="[^"]*"/>', '', t)
+        t = t.replace('</head>', ld(ORG,
+            {'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': a['title'], 'description': a['meta_description'],
+             'datePublished': a['fecha'], 'inLanguage': 'es', **({'image': f'{SITIO}{CL}assets/{a["cover_url"]}'} if hay_foto else {}),
+             'author': {'@type': 'Organization', 'name': 'Truly Nolen Chile'}, 'publisher': {'@type': 'Organization', 'name': 'Truly Nolen'}},
+            {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q['q'], 'acceptedAnswer': {'@type': 'Answer', 'text': q['a']}} for q in a['faqs']]},
+            {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': 'Inicio', 'item': f'{SITIO}{CL}'},
+                {'@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': f'{SITIO}{CL}blog/'},
+                {'@type': 'ListItem', 'position': 3, 'name': a['title'], 'item': f'{SITIO}{url}'}]}) + '</head>', 1)
+        guardar(f'blog/{a["slug"]}', t)
+    # Índice del blog
+    historias = ''.join(
+        f'<article class="journal-story"><div class="story-edition"><span>{k:02d}</span><time datetime="{a["fecha"]}">{fecha_larga(a["fecha"])}</time><span class="story-topic">{e(a["tema"])}</span></div>'
+        f'<div class="story-copy"><h2><a href="{CL}blog/{a["slug"]}/">{e(a["title"])}</a></h2><p>{e(a["excerpt"])}</p><a class="text-link" href="{CL}blog/{a["slug"]}/">Leer el artículo <span aria-hidden="true">→</span></a></div>'
+        + (f'<a class="story-image-link" href="{CL}blog/{a["slug"]}/" tabindex="-1" aria-hidden="true"><figure class="story-image"><img src="{CL}assets/{a["cover_url"]}" alt="" loading="lazy"/></figure></a>' if (DOCS / 'blog/fotos' / a['cover_url']).exists() else '')
+        + '</article>' for k, a in enumerate(BLOG, 1))
+    contenido = (f'<section class="wrap journal-wrap"><nav aria-label="Ruta"><a href="{CL}">Inicio</a><span aria-hidden="true">/</span>Blog de control de plagas</nav>'
+                 '<header class="journal-heading"><h1>Blog de control de plagas</h1><p class="s-prose">Guías sobre las plagas de Chile, con cada dato respaldado por su fuente.</p></header></section>'
+                 f'<section class="wrap journal-wrap"><div class="journal-stories">{historias}</div></section>' + CIERRE)
+    t = cabeza(LD.sub('', main(comun(leer('blog')), contenido)), 'blog/', 'Blog de control de plagas · Truly Nolen Chile',
+               'Guías sobre las plagas de Chile, con cada dato respaldado por su fuente.')
+    guardar('blog', t.replace('</head>', ld(ORG) + '</head>', 1))
 
 # ---------------------------------------------------------------- 8. sitemap, raíz y rutas relativas
 paginas = sorted(p.parent.relative_to(CHILE).as_posix() for p in CHILE.rglob('index.html'))

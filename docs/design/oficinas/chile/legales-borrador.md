@@ -22,7 +22,7 @@ Forma: la de Francia en la receta (un `\n\n` separa párrafos; responsable, uso 
 >
 > La información de este sitio es general: los servicios, la cobertura de cada sucursal, los precios y las condiciones se confirman directamente con Truly Nolen Chile antes de cada servicio.
 >
-> Cada sucursal opera con su propia resolución sanitaria. Las publicamos, con su número y fecha, en la sección de cobertura de la portada.
+> Nuestras sucursales cumplen las resoluciones sanitarias de cada región. Las que tenemos confirmadas las publicamos, con su número y fecha, en la sección de cobertura de la portada.
 >
 > Las guías de plagas resumen fuentes públicas, que se enlazan al pie de cada página. No reemplazan las indicaciones de la autoridad sanitaria ni la atención médica.
 
